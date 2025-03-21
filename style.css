@@ -1,0 +1,1489 @@
+.l-point_listInner.row.flex-row-reverse {
+  display: flex;
+  -webkit-box-align: center !important;
+  align-items: flex-start !important;
+  justify-content: flex-end !important;
+}
+
+@media (min-width: 992px) {
+  .col-lg-5 {
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    width: 41.66667%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-7 {
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    width: 80.33333%;
+  }
+}
+
+.l-point_listInner.row {
+  display: flex !important;
+  -webkit-box-align: center !important;
+  align-items: flex-end !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px),
+print {
+  .swiper {
+    margin: 40px auto 48px;
+    width: 720px;
+    height: fit-content;
+    overflow: hidden;
+  }
+}
+
+.swiper-wrapper {
+  transform: translate3d(0px, 0, 0);
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (min-width: 768px),
+print {
+  .swiper-slide {
+    width: 100%;
+  }
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px),
+print {
+  .swiper-slide img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.swiper-button-prev {
+  background: url(./image/slide_pre.png) no-repeat center / cover !important;
+  left: 60px !important;
+}
+
+.swiper-button-prev {
+  left: 270px !important;
+  right: auto !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute !important;
+  z-index: 10 !important;
+  cursor: pointer !important;
+}
+
+*:focus {
+  outline: none;
+}
+
+.swiper-button-next {
+  background: url(./image/slide_next.png) no-repeat center / cover !important;
+  right: 60px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 64px !important;
+  height: 64px !important;
+  top: 484px !important;
+  transform: translateY(-50%) !important;
+  z-index: 1 !important;
+}
+
+.swiper-button-next1,
+.swiper-button-prev1 {
+  width: 64px !important;
+  height: 64px !important;
+  top: 410px !important;
+  transform: translateY(-50%) !important;
+  z-index: 1 !important;
+}
+
+.asobi-swiper-prev,
+.asobi-swiper-next {
+  width: 64px !important;
+  height: 64px !important;
+  top: 590px !important;
+  transform: translateY(-50%) !important;
+  z-index: 1 !important;
+}
+
+.swiper-button-next {
+  right: 270px !important;
+  left: auto !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute !important;
+  z-index: 10 !important;
+  cursor: pointer !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ナビゲーションボタンのデフォルトデザインを削除 */
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+}
+
+.swiper-button-prev:after {
+  content: 'prev';
+  display: none;
+}
+
+.swiper-button-next:after {
+  content: 'next';
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  .about .inner {
+    background: #FFF !important;
+    padding: 30px 5% 20px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .inner {
+    width: 90% !important;
+    margin: 0 auto !important;
+    position: relative !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper {
+    margin: 30px auto 60px !important;
+    width: 100% !important;
+    height: fit-content !important;
+    overflow: hidden !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide img {
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-button-prev {
+    background: url(./image/slide_pre.png) no-repeat center / cover !important;
+    left: 5px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 30px !important;
+    height: 30px !important;
+    top: 58% !important;
+    transform: translateY(-50%) !important;
+    z-index: 1 !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-button-next {
+    background: url(./image/slide_next.png) no-repeat center / cover !important;
+    right: 5px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 30px !important;
+    height: 30px !important;
+    top: 58% !important;
+    transform: translateY(-50%) !important;
+    z-index: 1 !important;
+  }
+}
+
+ul#swiper-wrapper-307bb56b1913ba54 {
+  margin: 0px !important;
+  padding: 0px !important;
+  list-style: none !important;
+}
+
+ul#swiper-wrapper-3e42e77d5e6e3f70 ol,
+ul {
+  padding-left: 0rem !important;
+}
+
+
+.swiper-button-prev.swiper-button-lock {
+  display: block !important;
+}
+
+.swiper-button-next.swiper-button-lock {
+  display: block !important;
+}
+
+.enjoy-title {
+  margin: 0 auto;
+  width: 720px;
+  height: fit-content;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.memory-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 20px 0px 20px;
+  position: relative;
+}
+
+/* タイトル */
+.memory-title {
+  font-size: 55px;
+  font-weight: bolder;
+  color: #006d88;
+  margin-bottom: 15px;
+  font-family: toppan-bunkyu-midashi-go-std, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans CJK JP", Meiryo, sans-serif;
+}
+
+/* 画像とタイトルをレイアウト調整 */
+.memory-item {
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.memory-item--right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.memory-item--left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* 画像 */
+.memory-image {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.memory-image img {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+}
+
+/* 上の画像（左に影） */
+.memory-image--right::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: -15px;
+  width: 100%;
+  height: 100%;
+  background: #d1e5f1;
+  border-radius: 30px;
+  z-index: -1;
+}
+
+/* 下の画像（右に影） */
+.memory-image--left::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: -15px;
+  width: 100%;
+  height: 100%;
+  background: #d1e5f1;
+  border-radius: 30px;
+  z-index: -1;
+}
+
+/* 背景イラスト */
+.memory-section::before {
+  content: "";
+  position: absolute;
+  top: 315px;
+  left: -100px;
+  width: 230px;
+  height: 230px;
+  background: url(./image/scissors.png) no-repeat;
+  background-size: contain;
+}
+
+.memory-section::after {
+  content: "";
+  position: absolute;
+  bottom: 480px;
+  right: -100px;
+  width: 230px;
+  height: 230px;
+  background: url(./image/ruler.png) no-repeat;
+  background-size: contain;
+}
+
+/* 🔹 レスポンシブ調整 🔹 */
+
+/* タブレット（幅768px以下） */
+@media screen and (max-width: 768px) {
+  .memory-section {
+    padding: 60px 15px;
+  }
+
+  .memory-title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .memory-item--right,
+  .memory-item--left {
+    align-items: center;
+  }
+
+  .memory-image {
+    max-width: 100%;
+  }
+
+  /* 影を小さく */
+  .memory-image--right::before,
+  .memory-image--left::before {
+    top: 10px;
+    left: -10px;
+    right: -10px;
+    border-radius: 20px;
+  }
+
+  /* 背景イラストの位置変更 */
+  .memory-section::before {
+    top: 200px;
+    left: 10px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .memory-section::after {
+    bottom: 250px;
+    right: 10px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* スマホ（幅480px以下） */
+@media screen and (max-width: 480px) {
+  .memory-section {
+    padding: 40px 10px;
+  }
+
+  .memory-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .memory-item {
+    margin-bottom: 40px;
+  }
+
+  .memory-image {
+    max-width: 100%;
+  }
+
+  /* 影をさらに小さく */
+  .memory-image--right::before,
+  .memory-image--left::before {
+    top: 5px;
+    left: -5px;
+    right: -5px;
+    border-radius: 15px;
+  }
+
+  /* 背景イラストを縮小 */
+  .memory-section::before,
+  .memory-section::after {
+    width: 100px;
+    height: 100px;
+    opacity: 0.7;
+    /* 少し薄くする */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.memory-section_ {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 20px 48px 20px;
+  position: relative;
+}
+
+/* タイトル */
+.memory-title {
+  font-size: 55px;
+  font-weight: bolder;
+  color: #006d88;
+  margin-bottom: 15px;
+  font-family: toppan-bunkyu-midashi-go-std, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans CJK JP", Meiryo, sans-serif;
+}
+
+/* 画像とタイトルをレイアウト調整 */
+.memory-item_ {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.memory-item--right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.memory-item--left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* 画像 */
+.memory-image {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.memory-image img {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+}
+
+/* 上の画像（左に影） */
+.memory-image--right_::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: -15px;
+  width: 100%;
+  height: 100%;
+  background: #d1e5f1;
+  border-radius: 30px;
+  z-index: -1;
+}
+
+/* 下の画像（右に影） */
+.memory-image--left::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: -15px;
+  width: 100%;
+  height: 100%;
+  background: #d1e5f1;
+  border-radius: 30px;
+  z-index: -1;
+}
+
+/* 背景イラスト */
+.memory-section_::before {
+  content: "";
+  position: absolute;
+  top: 315px;
+  left: 1000px;
+  width: 230px;
+  height: 230px;
+  background: url(image/scissors.png) no-repeat;
+  background-size: contain;
+}
+
+.memory-section_::after {
+  content: "";
+  position: absolute;
+  bottom: 230px;
+  right: -340px;
+  width: 510px;
+  height: 510px;
+  background: url(image/book.png) no-repeat;
+  background-size: contain;
+}
+
+.number {
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 84px;
+  font-family: 'Toppan Bunkyu Gothic', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Meiryo', sans-serif;
+}
+
+.memory-title_ {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #006d88;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  font-family: toppan-bunkyu-midashi-go-std, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans CJK JP", Meiryo, sans-serif;
+}
+
+.memory-image--right_::after {
+  content: "";
+  position: absolute;
+  bottom: 220px;
+  right: 1000px;
+  width: 230px;
+  height: 230px;
+  background: url(image/ruler.png) no-repeat;
+  background-size: contain;
+}
+
+/* 🔹 レスポンシブ調整 🔹 */
+
+/* タブレット（幅768px以下） */
+@media screen and (max-width: 768px) {
+  .memory-section_ {
+    padding: 60px 15px;
+  }
+
+  .memory-title_ {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .memory-item--right {
+    align-items: end;
+  }
+
+  .memory-item--left {
+    align-items: flex-start;
+  }
+
+  .memory-title--right {
+    text-align: right;
+    margin-right: 0px;
+  }
+
+  .memory-image {
+    max-width: 100%;
+  }
+
+  /* 影を小さく */
+  .memory-image--right_::before,
+  .memory-image--left::before {
+    top: 10px;
+    left: -10px;
+    right: -10px;
+    border-radius: 20px;
+  }
+
+  /* 背景イラストの位置変更 */
+  .memory-section_::before {
+    top: 200px;
+    left: 10px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .memory-section_::after {
+    bottom: 250px;
+    right: 10px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* スマホ（幅480px以下） */
+@media screen and (max-width: 480px) {
+
+
+  .memory-title_ {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .memory-item_ {
+    margin-bottom: 30px;
+  }
+
+  .memory-image {
+    max-width: 100%;
+  }
+
+  /* 影をさらに小さく */
+  .memory-image--right_::before,
+  .memory-image--left::before {
+    top: 5px;
+    left: -5px;
+    right: -5px;
+    border-radius: 15px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.memory-section01 {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  position: relative;
+}
+
+/* 各ブロックのスタイル */
+.memory-item1 {
+  position: relative;
+  margin-bottom: 80px;
+  padding-top: 80px;
+}
+
+/* タイトルデザイン */
+.memory-title01 {
+  position: absolute;
+  top: 4px;
+  z-index: 10;
+}
+
+.memory-title01 img {
+  width: 440px;
+}
+
+.memory-title02 img {
+  width: 440px;
+}
+
+.memory-title03 img {
+  width: 554px;
+}
+
+.memory-title02 {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  z-index: 10;
+}
+
+.memory-title03 {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 10;
+}
+
+.blue-title {
+  background: #006d88;
+  color: #fff;
+}
+
+.orange-title {
+  background: #E57232;
+  color: #fff;
+}
+
+.green-title {
+  background: #2E8B57;
+  color: #fff;
+}
+
+/* タイトルの位置 */
+.memory-title--left {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.memory-title--right {
+  text-align: right;
+  margin-right: 30px;
+}
+
+/* 画像 */
+.memory-image {
+  position: relative;
+  width: 63%;
+  max-width: 900px;
+  border-radius: 20px;
+}
+
+.memory-image img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+/* 右寄せの画像 */
+.memory-image--right01 {
+  margin-left: auto;
+  display: block;
+}
+
+/* 左寄せの画像 */
+.memory-image--left01 {
+  margin-right: auto;
+  display: block;
+}
+
+/* 装飾画像 */
+.decoration {
+  position: absolute;
+}
+
+.soccer-boy {
+  left: -80px;
+  top: 182px;
+  width: 320px;
+}
+
+.stay-img {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  border-radius: 20px;
+
+}
+
+.bbq-set {
+  right: -8px;
+  top: 33%;
+  width: 330px;
+}
+
+.slippers {
+  left: -150px;
+  bottom: -100px;
+  width: 255px;
+}
+
+/* 矢印の配置 */
+.arrow {
+  position: absolute;
+  width: 200px;
+}
+
+.arrow-down {
+  bottom: -130px;
+  left: 25%;
+  transform: translateX(-50%);
+}
+
+.arrow-up {
+  bottom: -130px;
+  left: 75%;
+  transform: translateX(-50%);
+}
+
+.l-banner_border--btm {
+  z-index: -1;
+  height: 80px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .memory-section01 {
+    padding: 40px 10px;
+  }
+
+  .memory-title01 {
+    font-size: 40px;
+  }
+
+  .memory-image {
+    width: 100%;
+  }
+
+  .decoration {
+    width: 120px;
+  }
+
+  .memory-title03 {
+    top: -8px;
+    left: 0;
+  }
+
+  .enjoy-title {
+    margin: 0 auto;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .memory-title {
+    font-size: 40px;
+    font-weight: bolder;
+    color: #006d88;
+    margin-bottom: 15px;
+    font-family: toppan-bunkyu-midashi-go-std, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans CJK JP", Meiryo, sans-serif;
+  }
+
+  .memory-title--right {
+    text-align: right;
+    margin-right: 0px;
+  }
+
+  .number {
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 65px;
+    font-family: 'Toppan Bunkyu Gothic', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Meiryo', sans-serif;
+  }
+
+  .memory-title--left {
+    text-align: left;
+    margin-left: 0px;
+  }
+
+  .memory-title03 img {
+    width: auto;
+    max-width: 345px;
+  }
+
+  .arrow-up {
+    bottom: -138px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .arrow {
+    width: 120px;
+  }
+
+  .arrow-down {
+    bottom: -138px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .memory-title01 img,
+  .memory-title02 img {
+    max-width: 280px;
+  }
+
+  .memory-title02 {
+    top: -18px;
+    right: 0px;
+    width: auto;
+  }
+
+  .memory-title01 {
+    top: -28px;
+  }
+
+  .bbq-set {
+    left: 558px;
+    top: 100%;
+    width: 150px;
+  }
+
+  .soccer-boy {
+    left: 5px;
+    top: 550px;
+    width: 175px;
+  }
+
+  .slippers {
+    left: 0px;
+    bottom: -160px;
+    width: 120px;
+  }
+
+  .memory-image--right_::after {
+    content: "";
+    position: absolute;
+    bottom: 300px;
+    right: 310px;
+    width: 100px;
+    height: 100px;
+    background: url(image/ruler.png) no-repeat;
+    background-size: contain;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 450px) {
+
+  .memory-section_ {
+    padding: 0px 10px;
+  }
+
+  .memory-image--right_::after {
+    content: "";
+    position: absolute;
+    bottom: 300px;
+    right: 310px;
+    width: 100px;
+    height: 100px;
+    background: url(image/ruler.png) no-repeat;
+    background-size: contain;
+  }
+
+  .memory-section_::before {
+    top: -35px;
+    left: 300px;
+  }
+
+  .memory-section::after {
+    bottom: 334px;
+    right: 10px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .memory-section::before {
+    top: 13px;
+    left: 10px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .memory-section_::before,
+  .memory-section_::after {
+    width: 100px;
+    height: 100px;
+  }
+
+  .memory-section_::after {
+    bottom: 270px;
+    right: -45px;
+    width: 130px;
+    height: 130px;
+  }
+
+  .memory-title {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #006d88;
+    margin-bottom: 15px;
+    font-family: toppan-bunkyu-midashi-go-std, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans CJK JP", Meiryo, sans-serif;
+  }
+
+  .number {
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: 'Toppan Bunkyu Gothic', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Meiryo', sans-serif;
+  }
+
+  .memory-section01 {
+    padding: 0px 10px;
+  }
+
+  .memory-item1 {
+    position: relative;
+    margin-bottom: 48px;
+    padding-top: 70px;
+  }
+
+  /* タイトルの調整 */
+  .memory-title01 img,
+  .memory-title02 img,
+  .memory-title03 img {
+    max-width: 220px;
+  }
+
+  /* タイトルの調整 */
+  .memory-title03 img {
+    width: auto;
+    max-width: 270px;
+  }
+
+  .memory-title01 {
+    top: 10px;
+  }
+
+  .memory-title02 {
+    top: 10px;
+    right: 0px;
+    width: auto;
+  }
+
+  .memory-title03 {
+    top: 40px;
+    left: 0;
+  }
+
+  /* 画像の調整 */
+  .memory-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .stay-img {
+    width: 100%;
+  }
+
+  /* 矢印 */
+  .arrow {
+    width: 80px;
+  }
+
+  .arrow-down {
+    bottom: -86px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .arrow-up {
+    bottom: -86px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* 装飾画像の調整 */
+  .decoration {
+    width: 80px;
+  }
+
+  .py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 1px !important;
+  }
+
+  dl,
+  ol,
+  ul {
+    margin-top: 0;
+    margin-bottom: 0rem;
+  }
+
+  .soccer-boy {
+    left: 5px;
+    top: 326px;
+    width: 125px;
+  }
+
+  .slippers {
+    left: -42px;
+    bottom: -100px;
+    width: 90px;
+    z-index: 12;
+  }
+
+  .bbq-set {
+    left: 278px;
+    top: 102%;
+    width: 110px;
+  }
+
+
+}
+
+@media (max-width: 375px) {
+
+  .soccer-boy {
+    left: 5px;
+    top: 310px;
+    width: 125px;
+  }
+
+  .bbq-set {
+    left: 240px;
+    top: 102%;
+    width: 110px;
+  }
+}
+
+
+
+
+
+@media (max-width: 320px) {
+  .bbq-set {
+    left: 200px;
+    top: 102%;
+    width: 95px;
+  }
+
+  .soccer-boy {
+    left: 5px;
+    top: 285px;
+    width: 100px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CTAセクション */
+.cta-section {
+  text-align: center;
+  margin: 0px auto 80px auto;
+  position: relative;
+  max-width: 800px;
+}
+
+.cta-section01 {
+  text-align: center;
+  margin: 80px auto 80px auto;
+  position: relative;
+  max-width: 800px;
+}
+
+/* 上のテキスト */
+.cta-text {
+  font-size: 26px;
+  font-weight: bold;
+  color: #28a745;
+  margin-bottom: 0px;
+}
+
+/* ボタンの配置 */
+.cta-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* ボタン画像 */
+.cta-button {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+}
+
+/* 吹き出し（体育館や音楽室〜） */
+.cta-bubble {
+  position: absolute;
+  left: -80px;
+  top: -30px;
+  width: 200px;
+}
+
+@media (max-width: 480px) {
+  .cta-text {
+    font-size: 16px;
+  }
+
+  .cta-bubble {
+    left: -40px;
+    top: -20px;
+    width: 140px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.pc {
+  display: block;
+}
+
+.sp {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .l-section_titleText--foodoption {
+    font-size: 8.06667vw !important;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: block;
+  }
+
+  .swiper-button-prev {
+    left: -18px !important;
+    right: auto !important;
+  }
+
+  .swiper-slide {
+    flex-shrink: 0;
+    width: 100% !important;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    display: block;
+  }
+
+  .swiper-button-next {
+    right: -18px !important;
+    left: auto !important;
+  }
+
+  .swiper {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+  .py-lg-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 0rem !important;
+  }
+}
+
+.l-main {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 90px;
+}

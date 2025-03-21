@@ -1,0 +1,2079 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://katasho.jp/wp-content/themes/katasho/style.css" />
+  <link rel="stylesheet" href="app.min.css">
+  <link rel="icon" href="https://katasho.jp/wp-content/themes/katasho/asset/image/favicon.svg" />
+  <link rel="mask-icon" href="https://katasho.jp/wp-content/themes/katasho/asset/image/favicon_b.svg" color="#fff" />
+
+  <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js"></script>
+  <script>
+    // Fix preventDefault for IE
+    (function () {
+      var workingDefaultPrevented = (function () {
+        var e = document.createEvent('CustomEvent')
+        e.initEvent('Bootstrap', true, true)
+        e.preventDefault()
+        return e.defaultPrevented
+      })()
+      if (!workingDefaultPrevented) {
+        var origPreventDefault = Event.prototype.preventDefault
+        Event.prototype.preventDefault = function () {
+          if (!this.cancelable) {
+            return
+          }
+          origPreventDefault.call(this)
+          Object.defineProperty(this, 'defaultPrevented', {
+            get: function () {
+              return true
+            },
+            configurable: true
+          })
+        }
+      }
+    })()
+  </script>
+  <script>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');</script>
+  <script async="async" src="https://tripla.jp/sdk/javascript/tripla.min.js"
+    data-triplabot-code="97d153492847323f1820e00374dfd3f6"></script>
+  <script> (function (d) { var config = { kitId: 'iie6hhx', scriptTimeout: 3000, async: true }, h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s) })(document);</script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MZC23TD');</script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-MZC23TD');</script>
+  <!-- End Google Tag Manager -->
+  <title>遊んで泊まれる小学校 カタショー | 株式会社マキノハラボ </title>
+  <style>
+    img:is([sizes="auto" i], [sizes^="auto," i]) {
+      contain-intrinsic-size: 3000px 1500px
+    }
+  </style>
+
+  <!-- All in One SEO 4.1.3.4 -->
+  <meta name="description" content="誰もが経験している学校生活。甘酸っぱい青春、汗水流した部活動、なんとか乗り越えたテスト、最高の仲間と過ごした時 […]" />
+  <link rel="canonical" href="https://katasho.jp" />
+  <meta property="og:site_name" content="遊んで泊まれる小学校　カタショー | 株式会社マキノハラボ - 懐かしの小学校に遊んで泊まれます！" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="遊んで泊まれる小学校 カタショー | 株式会社マキノハラボ " />
+  <meta property="og:description" content="誰もが経験している学校生活。甘酸っぱい青春、汗水流した部活動、なんとか乗り越えたテスト、最高の仲間と過ごした時 […]" />
+  <meta property="og:url" content="https://katasho.jp" />
+  <meta property="og:image" content="https://katasho.jp/wp-content/uploads/2021/08/ホームページ　ロゴ横.jpg" />
+  <meta property="og:image:secure_url" content="https://katasho.jp/wp-content/uploads/2021/08/ホームページ　ロゴ横.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="article:published_time" content="2021-07-30T10:21:44Z" />
+  <meta property="article:modified_time" content="2024-08-16T17:44:14Z" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:domain" content="katasho.jp" />
+  <meta name="twitter:title" content="遊んで泊まれる小学校 カタショー | 株式会社マキノハラボ " />
+  <meta name="twitter:description" content="誰もが経験している学校生活。甘酸っぱい青春、汗水流した部活動、なんとか乗り越えたテスト、最高の仲間と過ごした時 […]" />
+  <meta name="twitter:image" content="https://katasho.jp/wp-content/uploads/2021/08/ホームページ　ロゴ横.jpg" />
+  <script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebSite","@id":"https:\/\/katasho.jp\/#website","url":"https:\/\/katasho.jp\/","name":"\u904a\u3093\u3067\u6cca\u307e\u308c\u308b\u5c0f\u5b66\u6821\u3000\u30ab\u30bf\u30b7\u30e7\u30fc | \u682a\u5f0f\u4f1a\u793e\u30de\u30ad\u30ce\u30cf\u30e9\u30dc","description":"\u61d0\u304b\u3057\u306e\u5c0f\u5b66\u6821\u306b\u904a\u3093\u3067\u6cca\u307e\u308c\u307e\u3059\uff01","publisher":{"@id":"https:\/\/katasho.jp\/#organization"},"potentialAction":{"@type":"SearchAction","target":"https:\/\/katasho.jp\/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"Organization","@id":"https:\/\/katasho.jp\/#organization","name":"\u904a\u3093\u3067\u6cca\u307e\u308c\u308b\u5b66\u6821\u3000\u304b\u305f\u5c0f | \u682a\u5f0f\u4f1a\u793e\u30de\u30ad\u30ce\u30cf\u30e9\u30dc","url":"https:\/\/katasho.jp\/"},{"@type":"BreadcrumbList","@id":"https:\/\/katasho.jp\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/katasho.jp\/#listItem","position":"1","item":{"@type":"WebPage","@id":"https:\/\/katasho.jp\/","name":"\u30db\u30fc\u30e0","description":"\u8ab0\u3082\u304c\u7d4c\u9a13\u3057\u3066\u3044\u308b\u5b66\u6821\u751f\u6d3b\u3002\u7518\u9178\u3063\u3071\u3044\u9752\u6625\u3001\u6c57\u6c34\u6d41\u3057\u305f\u90e8\u6d3b\u52d5\u3001\u306a\u3093\u3068\u304b\u4e57\u308a\u8d8a\u3048\u305f\u30c6\u30b9\u30c8\u3001\u6700\u9ad8\u306e\u4ef2\u9593\u3068\u904e\u3054\u3057\u305f\u6642 [\u2026]","url":"https:\/\/katasho.jp\/"}}]},{"@type":"WebPage","@id":"https:\/\/katasho.jp\/#webpage","url":"https:\/\/katasho.jp\/","name":"\u904a\u3093\u3067\u6cca\u307e\u308c\u308b\u5c0f\u5b66\u6821 \u30ab\u30bf\u30b7\u30e7\u30fc | \u682a\u5f0f\u4f1a\u793e\u30de\u30ad\u30ce\u30cf\u30e9\u30dc","description":"\u8ab0\u3082\u304c\u7d4c\u9a13\u3057\u3066\u3044\u308b\u5b66\u6821\u751f\u6d3b\u3002\u7518\u9178\u3063\u3071\u3044\u9752\u6625\u3001\u6c57\u6c34\u6d41\u3057\u305f\u90e8\u6d3b\u52d5\u3001\u306a\u3093\u3068\u304b\u4e57\u308a\u8d8a\u3048\u305f\u30c6\u30b9\u30c8\u3001\u6700\u9ad8\u306e\u4ef2\u9593\u3068\u904e\u3054\u3057\u305f\u6642 [\u2026]","inLanguage":"ja","isPartOf":{"@id":"https:\/\/katasho.jp\/#website"},"breadcrumb":{"@id":"https:\/\/katasho.jp\/#breadcrumblist"},"image":{"@type":"ImageObject","@id":"https:\/\/katasho.jp\/#mainImage","url":"https:\/\/katasho.jp\/wp-content\/uploads\/2021\/08\/\u30db\u30fc\u30e0\u30da\u30fc\u30b8\u3000\u30ed\u30b4\u6a2a.jpg","width":"1200","height":"630"},"primaryImageOfPage":{"@id":"https:\/\/katasho.jp\/#mainImage"},"datePublished":"2021-07-30T10:21:44+09:00","dateModified":"2024-08-16T17:44:14+09:00"}]}
+		</script>
+  <!-- All in One SEO -->
+
+  <link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+  <link rel="alternate" type="application/rss+xml" title="遊んで泊まれる小学校　カタショー | 株式会社マキノハラボ &raquo; フィード"
+    href="https://katasho.jp/feed" />
+  <link rel='stylesheet' id='sbi_styles-css'
+    href='https://katasho.jp/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.5.1' type='text/css'
+    media='all' />
+  <style id='classic-theme-styles-inline-css' type='text/css'>
+    /*! This file is auto-generated */
+    .wp-block-button__link {
+      color: #fff;
+      background-color: #32373c;
+      border-radius: 9999px;
+      box-shadow: none;
+      text-decoration: none;
+      padding: calc(.667em + 2px) calc(1.333em + 2px);
+      font-size: 1.125em
+    }
+
+    .wp-block-file__button {
+      background: #32373c;
+      color: #fff;
+      text-decoration: none
+    }
+  </style>
+  <style id='global-styles-inline-css' type='text/css'>
+    :root {
+      --wp--preset--aspect-ratio--square: 1;
+      --wp--preset--aspect-ratio--4-3: 4/3;
+      --wp--preset--aspect-ratio--3-4: 3/4;
+      --wp--preset--aspect-ratio--3-2: 3/2;
+      --wp--preset--aspect-ratio--2-3: 2/3;
+      --wp--preset--aspect-ratio--16-9: 16/9;
+      --wp--preset--aspect-ratio--9-16: 9/16;
+      --wp--preset--color--black: #000000;
+      --wp--preset--color--cyan-bluish-gray: #abb8c3;
+      --wp--preset--color--white: #ffffff;
+      --wp--preset--color--pale-pink: #f78da7;
+      --wp--preset--color--vivid-red: #cf2e2e;
+      --wp--preset--color--luminous-vivid-orange: #ff6900;
+      --wp--preset--color--luminous-vivid-amber: #fcb900;
+      --wp--preset--color--light-green-cyan: #7bdcb5;
+      --wp--preset--color--vivid-green-cyan: #00d084;
+      --wp--preset--color--pale-cyan-blue: #8ed1fc;
+      --wp--preset--color--vivid-cyan-blue: #0693e3;
+      --wp--preset--color--vivid-purple: #9b51e0;
+      --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+      --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+      --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+      --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+      --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+      --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+      --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+      --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+      --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+      --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+      --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+      --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+      --wp--preset--font-size--small: 13px;
+      --wp--preset--font-size--medium: 20px;
+      --wp--preset--font-size--large: 36px;
+      --wp--preset--font-size--x-large: 42px;
+      --wp--preset--spacing--20: 0.44rem;
+      --wp--preset--spacing--30: 0.67rem;
+      --wp--preset--spacing--40: 1rem;
+      --wp--preset--spacing--50: 1.5rem;
+      --wp--preset--spacing--60: 2.25rem;
+      --wp--preset--spacing--70: 3.38rem;
+      --wp--preset--spacing--80: 5.06rem;
+      --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+      --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+      --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+      --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+      --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+    }
+
+    :where(.is-layout-flex) {
+      gap: 0.5em;
+    }
+
+    :where(.is-layout-grid) {
+      gap: 0.5em;
+    }
+
+    body .is-layout-flex {
+      display: flex;
+    }
+
+    .is-layout-flex {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .is-layout-flex> :is(*, div) {
+      margin: 0;
+    }
+
+    body .is-layout-grid {
+      display: grid;
+    }
+
+    .is-layout-grid> :is(*, div) {
+      margin: 0;
+    }
+
+    :where(.wp-block-columns.is-layout-flex) {
+      gap: 2em;
+    }
+
+    :where(.wp-block-columns.is-layout-grid) {
+      gap: 2em;
+    }
+
+    :where(.wp-block-post-template.is-layout-flex) {
+      gap: 1.25em;
+    }
+
+    :where(.wp-block-post-template.is-layout-grid) {
+      gap: 1.25em;
+    }
+
+    .has-black-color {
+      color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-color {
+      color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-color {
+      color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-color {
+      color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-color {
+      color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-color {
+      color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-color {
+      color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-color {
+      color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-color {
+      color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-color {
+      color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-color {
+      color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-color {
+      color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-black-background-color {
+      background-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-background-color {
+      background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-background-color {
+      background-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-background-color {
+      background-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-background-color {
+      background-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-background-color {
+      background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-background-color {
+      background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-background-color {
+      background-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-background-color {
+      background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-background-color {
+      background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-background-color {
+      background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-background-color {
+      background-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-black-border-color {
+      border-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-border-color {
+      border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-border-color {
+      border-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-border-color {
+      border-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-border-color {
+      border-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-border-color {
+      border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-border-color {
+      border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-border-color {
+      border-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-border-color {
+      border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-border-color {
+      border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-border-color {
+      border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-border-color {
+      border-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+      background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+    }
+
+    .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+      background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+    }
+
+    .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+      background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+      background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+    }
+
+    .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+      background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+    }
+
+    .has-cool-to-warm-spectrum-gradient-background {
+      background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+    }
+
+    .has-blush-light-purple-gradient-background {
+      background: var(--wp--preset--gradient--blush-light-purple) !important;
+    }
+
+    .has-blush-bordeaux-gradient-background {
+      background: var(--wp--preset--gradient--blush-bordeaux) !important;
+    }
+
+    .has-luminous-dusk-gradient-background {
+      background: var(--wp--preset--gradient--luminous-dusk) !important;
+    }
+
+    .has-pale-ocean-gradient-background {
+      background: var(--wp--preset--gradient--pale-ocean) !important;
+    }
+
+    .has-electric-grass-gradient-background {
+      background: var(--wp--preset--gradient--electric-grass) !important;
+    }
+
+    .has-midnight-gradient-background {
+      background: var(--wp--preset--gradient--midnight) !important;
+    }
+
+    .has-small-font-size {
+      font-size: var(--wp--preset--font-size--small) !important;
+    }
+
+    .has-medium-font-size {
+      font-size: var(--wp--preset--font-size--medium) !important;
+    }
+
+    .has-large-font-size {
+      font-size: var(--wp--preset--font-size--large) !important;
+    }
+
+    .has-x-large-font-size {
+      font-size: var(--wp--preset--font-size--x-large) !important;
+    }
+
+    :where(.wp-block-post-template.is-layout-flex) {
+      gap: 1.25em;
+    }
+
+    :where(.wp-block-post-template.is-layout-grid) {
+      gap: 1.25em;
+    }
+
+    :where(.wp-block-columns.is-layout-flex) {
+      gap: 2em;
+    }
+
+    :where(.wp-block-columns.is-layout-grid) {
+      gap: 2em;
+    }
+
+    :root :where(.wp-block-pullquote) {
+      font-size: 1.5em;
+      line-height: 1.6;
+    }
+  </style>
+  <link rel='stylesheet' id='ctf_styles-css'
+    href='https://katasho.jp/wp-content/plugins/custom-twitter-feeds/css/ctf-styles.min.css?ver=2.2.2' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='cff-css'
+    href='https://katasho.jp/wp-content/plugins/custom-facebook-feed/assets/css/cff-style.min.css?ver=4.2.5'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='sb-font-awesome-css'
+    href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=6.7.2' type='text/css'
+    media='all' />
+  <!-- Instagram Feed CSS -->
+  <style type="text/css">
+    #sb_instagram .sbi_no_js img {
+      display: block !important;
+      height: 17.5vw;
+    }
+
+    @media screen and (max-width: 800px) {
+      #sb_instagram .sbi_no_js img {
+        height: 38vw;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      #sb_instagram .sbi_no_js img {
+        height: 78vw;
+      }
+    }
+  </style>
+  <link rel="icon" href="https://katasho.jp/wp-content/uploads/2023/09/cropped-校章映像用-32x32.png" sizes="32x32" />
+  <link rel="icon" href="https://katasho.jp/wp-content/uploads/2023/09/cropped-校章映像用-192x192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="https://katasho.jp/wp-content/uploads/2023/09/cropped-校章映像用-180x180.png" />
+  <meta name="msapplication-TileImage"
+    content="https://katasho.jp/wp-content/uploads/2023/09/cropped-校章映像用-270x270.png" />
+  <noscript>
+    <style id="rocket-lazyload-nojs-css">
+      .rll-youtube-player,
+      [data-lazy-src] {
+        display: none !important;
+      }
+    </style>
+  </noscript>
+
+
+
+
+
+
+
+
+
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"> <!-- SwiperのCSS -->
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZC23TD" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="l-wrapper">
+    <header class="l-header navbar navbar-expand-lg bg-transparent py-3 p-sm-4" id="header">
+      <div class="l-header_inner container-fluid justify-content-center">
+        <a class="l-header_logo navbar-brand" href="/">
+          <img src="https://katasho.jp/wp-content/themes/katasho/asset/image/logo_header.svg" alt="かた小ロゴ"
+            decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+              src="https://katasho.jp/wp-content/themes/katasho/asset/image/logo_header.svg" alt="かた小ロゴ"
+              decoding="async" /></noscript>
+        </a>
+        <div class="l-header_cont container-fluid">
+          <div class="l-header_contLeft">
+            <div class="l-header_sns">
+              <ul class="l-header_snsList list-unstyled mb-0">
+                <li><a href="https://twitter.com/katasho2tomaro" target="_blank">
+                    <img src="https://katasho.jp/wp-content/themes/katasho/asset/image/sns_twitter_header.svg"
+                      alt="Twitter" decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                        src="https://katasho.jp/wp-content/themes/katasho/asset/image/sns_twitter_header.svg"
+                        alt="Twitter" decoding="async" /></noscript>
+                  </a></li>
+                <li><a href="https://www.instagram.com/shizuoka_katasho/" target="_blank">
+                    <img src="https://katasho.jp/wp-content/themes/katasho/asset/image/sns_instagram_header.svg"
+                      alt="Instagram" decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                        src="https://katasho.jp/wp-content/themes/katasho/asset/image/sns_instagram_header.svg"
+                        alt="Instagram" decoding="async" /></noscript>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="l-header_contRight">
+            <div class="l-header_btn">
+              <button class="l-header_btnReserve btn btn-orange btn-sm me-5 u-pc" id="headerBtnReserve" type="button"
+                data-tripla-booking-widget="search">予約<span class="u-sm">（空き状況）</span></button>
+              <button class="l-header_btnMenu" type="button" data-bs-toggle="offcanvas" data-bs-target="#headerNav"
+                aria-controls="headerNav">
+                <picture>
+                  <source media="(max-width: 576px)"
+                    srcset="https://katasho.jp/wp-content/themes/katasho/asset/image/icon_menu_sp.svg">
+                  <img src="https://katasho.jp/wp-content/themes/katasho/asset/image/icon_menu.svg" alt="メニュー"
+                    decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                      src="https://katasho.jp/wp-content/themes/katasho/asset/image/icon_menu.svg" alt="メニュー"
+                      decoding="async" /></noscript>
+                </picture>
+              </button>
+            </div>
+            <div class="l-header_btn--fixed is-show" id="menuFixed">
+              <button class="l-header_btnMenu" type="button" data-bs-toggle="offcanvas" data-bs-target="#headerNav"
+                aria-controls="headerNav">
+                <picture>
+                  <source media="(max-width: 576px)"
+                    srcset="https://katasho.jp/wp-content/themes/katasho/asset/image/icon_menu_white_sp.svg">
+                  <img src="https://katasho.jp/wp-content/themes/katasho/asset/image/icon_menu_white.svg" alt="メニュー"
+                    decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                      src="https://katasho.jp/wp-content/themes/katasho/asset/image/icon_menu_white.svg" alt="メニュー"
+                      decoding="async" /></noscript>
+                </picture>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="l-nav offcanvas offcanvas-end" id="headerNav" tabindex="-1" aria-labelledby="headerNavLabel">
+      <div class="l-nav_header offcanvas-header">
+        <button class="l-nav_headerBtn btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+          <img src="https://katasho.jp/wp-content/themes/katasho/asset/image/icon_close.svg" alt="閉じる" decoding="async"
+            class="lazyloaded" data-ll-status="loaded"><noscript><img
+              src="https://katasho.jp/wp-content/themes/katasho/asset/image/icon_close.svg" alt="閉じる"
+              decoding="async" /></noscript>
+        </button>
+      </div>
+      <div class="l-nav_body offcanvas-body">
+        <div class="l-nav_menu">
+          <ul class="l-nav_menuList list-unstyled">
+            <li class="nav-item ">
+              <a class="l-nav_menuLink nav-link active" href="#stay">カタショーの廃校宿泊とは？</a>
+            </li>
+            <li class="nav-item ">
+              <a class="l-nav_menuLink nav-link" href="#landscape">カタショーの風景</a>
+            </li>
+            <li class="nav-item ">
+              <a class="l-nav_menuLink nav-link" href="#thosedays">懐かしいあの頃に戻って限界まで楽しもう！</a>
+            </li>
+            <li class="nav-item ">
+              <a class="l-nav_menuLink nav-link" href="#usagescene">カタショーのご利用シーン</a>
+            </li>
+            <li class="nav-item ">
+              <a class="l-nav_menuLink nav-link" href="#media">メディア掲載一覧</a>
+            </li>
+            <li class="nav-item ">
+              <a class="l-nav_menuLink nav-link" href="#price">料金プラン</a>
+            </li>
+            <li class="nav-item menu-item-has-children">
+              <a class="l-nav_menuLink nav-link" href="#option">他にもこんなオプションも！</a>
+              <ul class="l-nav_menuSublist list-unstyled">
+                <li class="nav-item ">
+                  <a class="l-nav_menuSublink nav-link" href="#food">食事のオプション</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="l-nav_menuSublink nav-link" href="#play">遊びのオプション</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="l-nav_menuSublink nav-link" href="#spa">温泉のオプション</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item ">
+              <a class="l-nav_menuLink nav-link" href="#difference">全国にある廃校宿泊との違い</a>
+            </li>
+            <li class="nav-item ">
+              <a class="l-nav_menuLink nav-link" href="#map">校内MAP</a>
+            </li>
+            <li class="nav-item ">
+              <a class="l-nav_menuLink nav-link" href="#location">所在地</a>
+            </li>
+            <li class="nav-item ">
+              <a class="l-nav_menuLink nav-link" href="#faq">よくある質問</a>
+            </li>
+          </ul>
+          <div class="l-header_navSns">
+            <ul class="l-header_snsList list-unstyled mb-0">
+              <li><a href="https://twitter.com/katasho2tomaro" target="_blank">
+                  <img
+                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                    alt="Twitter" decoding="async"
+                    data-lazy-src="https://katasho.jp/wp-content/themes/katasho/asset/image/sns_twitter_header.svg"><noscript><img
+                      src="https://katasho.jp/wp-content/themes/katasho/asset/image/sns_twitter_header.svg"
+                      alt="Twitter" decoding="async" /></noscript>
+                </a></li>
+              <li><a href="https://www.instagram.com/shizuoka_katasho/" target="_blank">
+                  <img
+                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                    alt="Instagram" decoding="async"
+                    data-lazy-src="https://katasho.jp/wp-content/themes/katasho/asset/image/sns_instagram_header.svg"><noscript><img
+                      src="https://katasho.jp/wp-content/themes/katasho/asset/image/sns_instagram_header.svg"
+                      alt="Instagram" decoding="async" /></noscript>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="l-main">
+      <div class="l-main_inner pb-lg-5">
+
+        <section class="l-section l-mv p-0 p-lg-4" id="mv">
+          <div class="l-mv_inner container-fluid">
+            <h1 class="l-mv_video">
+              <span class="u-pc"> <video src="https://katasho.jp/wp-content/uploads/2021/08/横改HP.mp4"
+                  poster="https://katasho.jp/wp-content/uploads/2021/08/スクリーンショット-2021-08-14-10.47.04.png" muted="muted"
+                  autoplay="autoplay" loop="loop" playsinline="playsinline" title="遊んで泊まれる小学校"></video></span><span
+                class="u-tab"> <video src="https://katasho.jp/wp-content/uploads/2021/08/縦改HP.mov"
+                  poster="https://katasho.jp/wp-content/uploads/2021/08/スクリーンショット-2021-08-14-10.23.32.png" muted="muted"
+                  autoplay="autoplay" loop="loop" playsinline="playsinline"></video></span>
+            </h1>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="cta-section01">
+          <div class="container">
+            <p class="cta-text">＼年間6,000名以上にご利用いただいております！／</p>
+            <div class="cta-container">
+              <a href="#">
+                <img src="image/btn.png" alt="今すぐ予約して非日常体験をしにいく！" class="cta-button">
+              </a>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <section class="l-section l-option" id="usagescene">
+          <div class="l-section_bg">
+            <div class="l-section_inner py-5">
+              <div class="container">
+                <div class="l-section_title--image text-center mb-5">
+                  <h2 class="l-section_titleText l-section_titleText--foodoption"><span
+                      class="l-section_titleImage--left"><img src="image/title_introduction_image_left.png" alt=""
+                        decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                          src="image/title_introduction_image_left.png" alt=""
+                          decoding="async"></noscript></span>カタショーの<br>廃校宿泊とは？<span
+                      class="l-section_titleImage--right"><img src="image/title_introduction_image_right.png" alt=""
+                        decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                          src="image/title_food_image_right.png" alt="" decoding="async"></noscript></span></h2>
+                </div>
+              </div>
+
+              <section class="memory-section01">
+
+                <!-- 遊んで（右寄せ） -->
+                <div class="memory-item1 memory-item--right1">
+                  <h2 class="memory-title01">
+                    <img src="image/title_play.png" alt="遊んで">
+                  </h2>
+                  <img class="decoration soccer-boy" src="image/lead_bg_lefttop_animate.gif" alt="サッカー少年">
+                  <div class="memory-image memory-image--right01">
+                    <img src="image/fireworks.png" alt="花火で遊ぶ">
+                  </div>
+                  <img class="arrow arrow-down" src="image/arrow_down.png" alt="矢印">
+                </div>
+
+                <!-- 食べて（左寄せ） -->
+                <div class="memory-item1 memory-item--left">
+                  <h2 class="memory-title02">
+                    <img src="image/title_eat.png" alt="食べて">
+                  </h2>
+                  <div class="memory-image memory-image--left01">
+                    <img src="image/school_lunch.png" alt="給食">
+                  </div>
+                  <img class="decoration bbq-set" src="image/bbq_set.png" alt="BBQセット">
+                  <img class="arrow arrow-up" src="image/arrow_up.png" alt="矢印">
+                </div>
+
+                <!-- 泊まれる（右寄せ） -->
+                <div class="memory-item1 memory-item--right1">
+                  <h2 class="memory-title03">
+                    <img src="image/title_stay.png" alt="泊まれる！">
+                  </h2>
+                  <img class="decoration slippers" src="image/slippers_hat.png" alt="スリッパ">
+                  <div class="memory-image memory-image--right01 stay-img">
+                    <img src="image/stay_school.png" alt="学校で宿泊">
+                  </div>
+                </div>
+
+              </section>
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="l-section l-album l-section_bg py-lg-5 " id="landscape">
+          <div class="l-album_bg  l-section_inner py-lg-5">
+            <div class="l-album_bgLeft">
+              <picture>
+                <source media="(max-width: 991px)" srcset="image/album_bg_left_sp.png">
+                <img src="image/album_bg_left.png" alt="" decoding="async" class="lazyloaded"
+                  data-ll-status="loaded"><noscript><img src="image/album_bg_left.png" alt=""
+                    decoding="async" /></noscript>
+              </picture>
+            </div>
+            <div class="l-album_bgRight">
+              <picture>
+                <source media="(max-width: 991px)" srcset="image/album_bg_right_sp.png">
+                <img src="image/album_bg_right.png" alt="" decoding="async" class="lazyloaded"
+                  data-ll-status="loaded"><noscript><img src="image/album_bg_right.png" alt=""
+                    decoding="async" /></noscript>
+              </picture>
+            </div>
+            <div class="l-album_bgLeftcnt u-pc"><img src="image/album_bg_leftcnt_animate.gif" alt="" decoding="async"
+                class="lazyloaded" data-ll-status="loaded"><noscript><img src="image/album_bg_leftcnt_animate.gif"
+                  alt="" decoding="async" /></noscript></div>
+            <div class="l-album_bgRightcnt u-pc"><img src="image/album_bg_rightcnt_animate.gif" alt="" decoding="async"
+                class="lazyloaded" data-ll-status="loaded"><noscript><img src="image/album_bg_rightcnt_animate.gif"
+                  alt="" decoding="async" /></noscript></div>
+            <div class="l-section_inner py-5 pt-lg-0">
+              <div class="container">
+                <div class="l-section_title text-center mb-5">
+                  <h2 class="l-section_titleText l-section_titleText--album">カタショーの風景</h2>
+                </div>
+                <ul class="l-album_list list-unstyled row row-cols-2 g-3 g-lg-0 mb-0 mb-lg-5">
+                  <li class="l-album_listCard col">
+                    <div class="l-album_card--01 card bg-transparent border-0">
+                      <h3 class="l-album_cardBalloon"><img src="image/album_balloon01.svg" alt="今日の日直は誰だ？"
+                          decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                            src="image/album_balloon01.svg" alt="今日の日直は誰だ？" decoding="async" /></noscript></h3>
+                      <div class="l-album_cardImage"><img loading="lazy" src="image/album_image01.png" alt=""
+                          width="1125" height="944" decoding="async" class="lazyloaded"
+                          data-ll-status="loaded"><noscript><img loading="lazy" src="image/album_image01.png" alt=""
+                            width="1125" height="944" decoding="async" /></noscript></div>
+                    </div>
+                  </li>
+                  <li class="l-album_listCard col">
+                    <div class="l-album_card--02 card bg-transparent border-0">
+                      <h3 class="l-album_cardBalloon"><img src="image/album_balloon02.svg" alt="廊下は走るな！"
+                          decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                            src="image/album_balloon02.svg" alt="廊下は走るな！" decoding="async" /></noscript></h3>
+                      <div class="l-album_cardImage"><img loading="lazy" src="image/album_image02.png" alt=""
+                          width="1068" height="819" decoding="async" class="lazyloaded"
+                          data-ll-status="loaded"><noscript><img loading="lazy" src="image/album_image02.png" alt=""
+                            width="1068" height="819" decoding="async" /></noscript></div>
+                    </div>
+                  </li>
+                  <li class="l-album_listCard col">
+                    <div class="l-album_card--03 card bg-transparent border-0">
+                      <h3 class="l-album_cardBalloon"><img src="image/album_balloon03.svg" alt="先輩好きです！"
+                          decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                            src="image/album_balloon03.svg" alt="先輩好きです！" decoding="async" /></noscript></h3>
+                      <div class="l-album_cardImage"><img loading="lazy" src="image/album_image03.png" alt=""
+                          width="1038" height="824" decoding="async" class="lazyloaded"
+                          data-ll-status="loaded"><noscript><img loading="lazy" src="image/album_image03.png" alt=""
+                            width="1038" height="824" decoding="async" /></noscript></div>
+                    </div>
+                  </li>
+                  <li class="l-album_listCard col">
+                    <div class="l-album_card--04 card bg-transparent border-0">
+                      <h3 class="l-album_cardBalloon"><img src="image/album_balloon04.svg" alt="好き嫌いはいけません！"
+                          decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                            src="image/album_balloon04.svg" alt="好き嫌いはいけません！" decoding="async" /></noscript></h3>
+                      <div class="l-album_cardImage"><img loading="lazy" src="image/album_image04.png" alt=""
+                          width="1072" height="969" decoding="async" class="lazyloaded"
+                          data-ll-status="loaded"><noscript><img loading="lazy" src="image/album_image04.png" alt=""
+                            width="1072" height="969" decoding="async" /></noscript></div>
+                    </div>
+                  </li>
+                  <li class="l-album_listCard col">
+                    <div class="l-album_card--05 card bg-transparent border-0">
+                      <h3 class="l-album_cardBalloon"><img src="image/album_balloon05.svg" alt="…先生、バスケがしたいです！"
+                          decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                            src="image/album_balloon05.svg" alt="…先生、バスケがしたいです！" decoding="async" /></noscript></h3>
+                      <div class="l-album_cardImage"><img loading="lazy" src="image/album_image05.png" alt=""
+                          width="1116" height="857" decoding="async" class="lazyloaded"
+                          data-ll-status="loaded"><noscript><img loading="lazy" src="image/album_image05.png" alt=""
+                            width="1116" height="857" decoding="async" /></noscript></div>
+                    </div>
+                  </li>
+                  <li class="l-album_listCard col">
+                    <div class="l-album_card--06 card bg-transparent border-0">
+                      <h3 class="l-album_cardBalloon"><img src="image/album_balloon06.svg" alt="実におもしろい！"
+                          decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                            src="image/album_balloon06.svg" alt="実におもしろい！" decoding="async" /></noscript></h3>
+                      <div class="l-album_cardImage"><img loading="lazy" src="image/album_image06.png" alt=""
+                          width="1135" height="750" decoding="async" class="lazyloaded"
+                          data-ll-status="loaded"><noscript><img loading="lazy" src="image/album_image06.png" alt=""
+                            width="1135" height="750" decoding="async" /></noscript></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="container-fluid p-0">
+                <div class="l-album_activity mb-5">
+                  <div class="l-album_activityImage"><img
+                      src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                      alt="" decoding="async" data-lazy-src="image/album_activity_sp.png"><noscript><img
+                        src="image/album_activity_sp.png" alt="" decoding="async" /></noscript></div>
+                </div>
+              </div>
+            </div>
+            <div class="l-album_bgRightbtm"><img
+                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                alt="" decoding="async" data-lazy-src="image/album_bg_rightbtm_animate.gif"><noscript><img
+                  src="image/album_bg_rightbtm_animate.gif" alt="" decoding="async" /></noscript></div>
+          </div>
+        </section>
+
+
+
+
+
+        <section class="l-section l-enjoy" id="thosedays">
+          <div class="l-section_inner l-section_bg--gray py-5">
+            <div class="container">
+              <div class="container-fluid px-0 l-section_bg py-lg-5">
+                <div class="l-section_title text-center">
+                  <h2 class="l-map_title">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="image/enjoy_title.png">
+                      <img src="image/enjoy_title.png" alt="懐かしいあの頃に戻って限界まで楽しもう！" decoding="async" class="lazyloaded"
+                        data-ll-status="loaded"><noscript><img src="image/enjoy_title.png" alt="懐かしいあの頃に戻って限界まで楽しもう！"
+                          decoding="async" /></noscript>
+                    </picture>
+                  </h2>
+                </div>
+              </div>
+              <section class="l-section" id="attraction">
+                <div class="l-section_inner">
+                  <div class="enjoy-title">
+                    <img src="image/enjoy_slidertitle01.png" alt="01.全国No.1のアトラクションで最高に楽しく遊べる！">
+                  </div>
+                  <div class="inner">
+                    <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                      <ul class="swiper-wrapper" id="swiper-wrapper-d6a8adb7ce9fcc62" aria-live="polite">
+                        <li class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3"
+                          data-swiper-slide-index="0" style="width: 720px;"><img src="image/enjoy_slide01-1.png"
+                            alt="体育館で遊ぶ！">
+                        </li>
+                        <li class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 3"
+                          data-swiper-slide-index="1" style="width: 720px;"><img src="image/enjoy_slide01-2.png"
+                            alt="夜の学校で肝試しや謎解き">
+                        </li>
+                        <li class="swiper-slide" role="group" aria-label="3 / 3" data-swiper-slide-index="2"
+                          style="width: 720px;"><img src="image/enjoy_slide01-3.png" alt="学校で花火">
+                        </li>
+                      </ul>
+                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                    <!-- navigation buttons -->
+                    <div class="swiper-button-prev swiper-button-prev1" tabindex="0" role="button"
+                      aria-label="Previous slide" aria-controls="swiper-wrapper-d6a8adb7ce9fcc62"></div>
+                    <div class="swiper-button-next swiper-button-next1" tabindex="0" role="button"
+                      aria-label="Next slide" aria-controls="swiper-wrapper-d6a8adb7ce9fcc62"></div>
+                  </div>
+                </div>
+              </section>
+              <section class="l-section" id="schoollunch">
+                <div class="l-section_inner container">
+                  <div class="enjoy-title">
+                    <img src="image/enjoy_slidertitle02.png" alt="02.学生の頃、毎日楽しみにしていた給食を完全再現！">
+                  </div>
+                  <div class="inner">
+                    <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                      <ul class="swiper-wrapper" id="swiper-wrapper-d6a8adb7ce9fcc62" aria-live="polite">
+                        <li class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 2"
+                          data-swiper-slide-index="0" style="width: 720px;"><img src="image/enjoy_slide02-1.png"
+                            alt="懐かしの給食">
+                        </li>
+                        <li class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 2"
+                          data-swiper-slide-index="1" style="width: 720px;"><img src="image/enjoy_slide02-2.png"
+                            alt="夜はBBQも！">
+                        </li>
+                      </ul>
+                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                    <!-- navigation buttons -->
+                    <div class="swiper-button-prev swiper-button-prev1" tabindex="0" role="button"
+                      aria-label="Previous slide" aria-controls="swiper-wrapper-d6a8adb7ce9fcc62"></div>
+                    <div class="swiper-button-next swiper-button-next1" tabindex="0" role="button"
+                      aria-label="Next slide" aria-controls="swiper-wrapper-d6a8adb7ce9fcc62"></div>
+                  </div>
+                </div>
+              </section>
+              <section class="l-section" id="sleepover">
+                <div class="l-section_inner container l-section_bg py-lg-5   ">
+                  <div class="enjoy-title">
+                    <img src="image/enjoy_slidertitle03.png" alt="03.夜は学校で泊まり！">
+                  </div>
+                  <div class="inner">
+                    <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                      <ul class="swiper-wrapper" id="swiper-wrapper-d6a8adb7ce9fcc62" aria-live="polite">
+                        <li class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 2"
+                          data-swiper-slide-index="0" style="width: 720px;"><img src="image/enjoy_slide03-1.png"
+                            alt="元多目的ルームの南東！">
+                        </li>
+                        <li class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 2"
+                          data-swiper-slide-index="1" style="width: 720px;"><img src="image/enjoy_slide03-2.png"
+                            alt="北棟は超大部屋！">
+                        </li>
+                      </ul>
+                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                    <!-- navigation buttons -->
+                    <div class="swiper-button-prev swiper-button-prev1" tabindex="0" role="button"
+                      aria-label="Previous slide" aria-controls="swiper-wrapper-d6a8adb7ce9fcc62"></div>
+                    <div class="swiper-button-next swiper-button-next1" tabindex="0" role="button"
+                      aria-label="Next slide" aria-controls="swiper-wrapper-d6a8adb7ce9fcc62"></div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="l-section l-option" id="usagescene">
+          <div class="l-section_bg--lightgray py-lg-5">
+            <div class="l-section_inner py-5">
+              <div class="container">
+                <div class="l-section_title--image text-center mb-5">
+                  <h2 class="l-section_titleText l-section_titleText--foodoption"><span
+                      class="l-section_titleImage--left"><img src="image/title_introduction_image_left.png" alt=""
+                        decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                          src="image/title_introduction_image_left.png" alt=""
+                          decoding="async"></noscript></span>カタショーが<br>選ばれる<br class="sp">3つの理由！<span
+                      class="l-section_titleImage--right"><img src="image/title_introduction_image_right.png" alt=""
+                        decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                          src="image/title_food_image_right.png" alt="" decoding="async"></noscript></span></h2>
+                </div>
+              </div>
+
+              <section class="memory-section_">
+
+                <!-- 1つ目のブロック（右寄せ） -->
+                <div class="memory-item_ memory-item--left">
+                  <h2 class="memory-title_ memory-title--left"><span class="number">01.</span><br class="sp">業界No.1のアトラクション数</h2>
+                  <div class="memory-image memory-image--left">
+                    <img src="image/attraction.png" alt="01.業界No.1のアトラクション数">
+                  </div>
+                </div>
+
+                <!-- 2つ目のブロック（左寄せ） -->
+                <div class="memory-item_ memory-item--right">
+                  <h2 class="memory-title_ memory-title--right"><span class="number">02.</span><br class="sp">非日常体験が味わえる！</h2>
+                  <div class="memory-image memory-image--right_">
+                    <img src="image/experience.png" alt="02.非日常体験が味わえる！">
+                  </div>
+                </div>
+
+                <!-- 3つ目のブロック（右寄せ） -->
+                <div class="memory-item_ memory-item--left">
+                  <h2 class="memory-title_ memory-title--left"><span class="number">03.</span><br class="sp">どの世代でも楽しめる！</h2>
+                  <div class="memory-image memory-image--left">
+                    <img src="image/generation.png" alt="03.どの世代でも楽しめる！">
+                  </div>
+                </div>
+              </section>
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+        </section>
+
+
+
+        <section class="l-section l-option" id="stay">
+          <div class="l-section_bg py-lg-5">
+            <div class="l-section_inner py-5">
+              <div class="container">
+                <div class="l-section_title--image text-center mb-5">
+                  <h2 class="l-section_titleText l-section_titleText--foodoption"><span
+                      class="l-section_titleImage--left"><img src="image/title_introduction_image_left.png" alt=""
+                        decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                          src="image/title_introduction_image_left.png" alt=""
+                          decoding="async"></noscript></span>カタショーの<br>ご利用シーン<span
+                      class="l-section_titleImage--right"><img src="image/title_introduction_image_right.png" alt=""
+                        decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                          src="image/title_food_image_right.png" alt="" decoding="async"></noscript></span></h2>
+                </div>
+              </div>
+
+              <section class="memory-section">
+                <!-- 1つ目のブロック（右寄せ） -->
+                <div class="memory-item memory-item--right">
+                  <h2 class="memory-title memory-title--right">大学の友達と思い出作りに！</h2>
+                  <div class="memory-image memory-image--right">
+                    <img src="image/university_friends.png" alt="大学の友達と思い出作りに！">
+                  </div>
+                </div>
+
+                <!-- 2つ目のブロック（左寄せ） -->
+                <div class="memory-item memory-item--left">
+                  <h2 class="memory-title memory-title--left">家族で思い出作りに！</h2>
+                  <div class="memory-image memory-image--left">
+                    <img src="image/family_movie.png" alt="家族で思い出作りに！">
+                  </div>
+                </div>
+              </section>
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <aside class="l-section l-banner" id="media">
+          <div class="l-banner_border--top">
+            <div class="u-pc">
+              <svg viewBox="0 0 1366 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="m1366 100s-254.8-100-683-100-683 100-683 100z" fill="#ecedf2"></path>
+              </svg>
+            </div>
+            <div class="u-tab">
+              <svg viewBox="0 0 375 28" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="m375 28s-70-28-187.5-28-187.5 28-187.5 28z" fill="#ecedf2"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="l-banner_bg l-section_bg--gray">
+            <div class="l-banner_bgLeft u-pc"><img
+                src="/wp-content/themes/katasho/asset/image/banner_bg_left_animate.gif" alt="" decoding="async"
+                data-lazy-src="/wp-content/themes/katasho/asset/image/banner_bg_left_animate.gif" class="error"
+                data-ll-status="error"><noscript><img
+                  src="/wp-content/themes/katasho/asset/image/banner_bg_left_animate.gif" alt=""
+                  decoding="async" /></noscript>
+            </div>
+            <div class="l-banner_bgRight u-pc"><img src="/wp-content/themes/katasho/asset/image/banner_bg_right.png"
+                alt="" decoding="async" data-lazy-src="/wp-content/themes/katasho/asset/image/banner_bg_right.png"
+                class="error" data-ll-status="error"><noscript><img
+                  src="/wp-content/themes/katasho/asset/image/banner_bg_right.png" alt="" decoding="async" /></noscript>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="l-section_inner container pt-3 pb-5 pt-sm-3 pt-lg-0">
+              <ul class="l-banner_list col-lg-8 mx-auto list-unstyled mb-0">
+                <li class="l-banner_listItem">
+                  <div class="l-banner_title text-center mb-3">
+                    <h2 class="l-banner_titleText mb-0">メディア掲載一覧</h2>
+                  </div>
+                  <figure class="figure mb-0">
+                    <div class="figure-img">
+                      <picture>
+                        <source media="(max-width: 576px)"
+                          srcset="https://katasho.jp/wp-content/uploads/2022/04/メディア掲載-1.png">
+                        <img src="https://katasho.jp/wp-content/uploads/2022/04/メディア掲載-1.png" alt="メディア"
+                          decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                            src="https://katasho.jp/wp-content/uploads/2022/04/メディア掲載-1.png" alt="メディア"
+                            decoding="async" /></noscript>
+                      </picture>
+                    </div>
+                    <figcaption class="figure-caption"></figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+
+
+          </div>
+          <div class="l-banner_border--btm">
+            <div class="u-pc">
+              <svg viewBox="0 0 1366 129" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="m0 0v129h13.9c60.3-28.4 300.2-129 668-129s607.7 100.6 668 129h16.1v-129z" fill="#ecedf2">
+                </path>
+              </svg>
+            </div>
+            <div class="u-tab">
+              <svg viewBox="0 0 375 28" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="m0 0v28s70-28 187.5-28 187.5 28 187.5 28v-28z" fill="#ecedf2"></path>
+              </svg>
+            </div>
+          </div>
+          <section class="cta-section">
+            <div class="container">
+              <p class="cta-text">＼年間6,000名以上にご利用いただいております！／</p>
+              <div class="cta-container">
+                <a href="#">
+                  <img src="image/btn.png" alt="今すぐ予約して非日常体験をしにいく！" class="cta-button">
+                </a>
+              </div>
+            </div>
+          </section>
+        </aside>
+
+
+
+
+
+
+
+
+
+
+
+        <section class="l-section l-song" id="price">
+          <div class="py-sm-5 l-section_bg--gray">
+            <div class="l-section_inner pt-5">
+              <div class="container">
+                <div class="text-center">
+                  <h2 class="l-section_titleText l-section_titleText--address">料金プラン</h2>
+                </div>
+
+
+
+
+
+
+
+                <aside class="l-section l-banner" id="banner">
+                  <div class="l-banner_bg l-section_bg--gray">
+                    <div class="l-section_inner container py-5">
+                      <div class="container">
+                        <ul class="list-unstyled">
+                          <li class="mb-2 mb-lg-4">
+                            <figure class="figure">
+                              <div class="figure-img">
+                                <picture>
+                                  <source media="(max-width: 576px)"
+                                    srcset="https://katasho.jp/wp-content/uploads/2023/04/price1__sp-1.png"><img
+                                    src="https://katasho.jp/wp-content/uploads/2023/04/price1__pc-1.png"
+                                    alt="どれだけ遊んで泊まっても 平日 5人〜 ¥8,400(税込)〜 土日祝 7人〜 ¥9,900(税込)〜" decoding="async"
+                                    class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                      src="https://katasho.jp/wp-content/uploads/2023/04/price1__pc-1.png"
+                                      alt="どれだけ遊んで泊まっても 平日 5人〜 ¥8,400(税込)〜 土日祝 7人〜 ¥9,900(税込)〜"
+                                      decoding="async"></noscript>
+                                </picture>
+                              </div>
+                              <figcaption class="figure-caption"></figcaption>
+                            </figure>
+                          </li>
+                          <li class="mb-2 mb-lg-4">
+                            <figure class="figure">
+                              <div class="figure-img">
+                                <picture>
+                                  <source media="(max-width: 576px)"
+                                    srcset="https://katasho.jp/wp-content/uploads/2023/04/price2__sp.png"><img
+                                    src="https://katasho.jp/wp-content/uploads/2023/04/price2__pc-1.png"
+                                    alt="日帰りで遊びまくり お一人様からご利用いただけます 平日 ¥4,900(税込)〜 土日祝 ¥4,900(税込)〜" decoding="async"
+                                    class="lazyloaded" data-ll-status="loaded"><noscript><img
+                                      src="https://katasho.jp/wp-content/uploads/2023/04/price2__pc-1.png"
+                                      alt="日帰りで遊びまくり お一人様からご利用いただけます 平日 ¥4,900(税込)〜 土日祝 ¥4,900(税込)〜"
+                                      decoding="async"></noscript>
+                                </picture>
+                              </div>
+                              <figcaption class="figure-caption px-3"><br>※1 平日オフシーズンは、土日祝ハイシーズン以外の日です。 <br>※2
+                                土日祝ハイシーズンは、土日祝日に加えて、ゴールデンウィーク・夏休み(7/15~9/31)・年末年始・春休み(2/1~4/10)です。 <br>※3
+                                食事処は宿泊者優先となります。
+                                <br>※
+                                最低利用金額はそれぞれ平日オフシーズンは42,000円(大人5名分)、土日祝ハイシーズンで69,300円(大人7名分)です。<br>※
+                                日帰り利用はコスプレイヤー向けのプランです。利用可能時間は10:00~21:00です。ご予約は事前にお問い合わせページからご連絡ください。
+                              </figcaption>
+                            </figure>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+        <section class="l-section l-song" id="option">
+          <div class="l-section_bg py-lg-5">
+            <div class="l-section_inner pt-5">
+              <div class="container">
+                <div class="text-center">
+                  <h2 class="l-section_titleText l-section_titleText--address">他にもこんな<br class="sp">オプションも！</h2>
+                </div>
+
+
+                <nav class="l-section l-anchor" id="nav">
+                  <div class="l-section_inner container py-5">
+                    <div class="container">
+                      <ul class="l-anchor_list list-unstyled row gy-3 justify-content-center">
+                        <li class="l-anchor_listItem--btn col-4 col-lg-2"><a class="l-anchor_btn" href="#food"><img
+                              src="image/anchor_food.svg" alt="食事のオプション" decoding="async" class="lazyloaded"
+                              data-ll-status="loaded"><noscript><img src="image/anchor_food.svg" alt="食事のオプション"
+                                decoding="async"></noscript></a></li>
+                        <li class="l-anchor_listItem--btn col-4 col-lg-2"><a class="l-anchor_btn" href="#play"><img
+                              src="image/anchor_play.svg" alt="遊びのオプション" decoding="async" class="lazyloaded"
+                              data-ll-status="loaded"><noscript><img src="image/anchor_play.svg" alt="遊びのオプション"
+                                decoding="async"></noscript></a></li>
+                        <li class="l-anchor_listItem--btn col-4 col-lg-2"><a class="l-anchor_btn" href="#spa"><img
+                              src="image/anchor_spa.svg" alt="温泉のオプション" decoding="async" class="lazyloaded"
+                              data-ll-status="loaded"><noscript><img src="image/anchor_spa.svg" alt="温泉のオプション"
+                                decoding="async"></noscript></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="l-section l-option" id="food">
+          <div class="l-section_bg--lightgray py-lg-5">
+            <div class="l-section_inner py-5">
+              <div class="container">
+                <div class="l-section_title--image text-center mb-5">
+                  <h2 class="l-section_titleText l-section_titleText--foodoption"><span
+                      class="l-section_titleImage--left"><img src="image/title_food_image_left.png" alt=""
+                        decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                          src="image/title_food_image_left.png" alt="" decoding="async"></noscript></span>食事の<br
+                      class="u-sp">オプション<span class="l-section_titleImage--right"><img
+                        src="image/title_food_image_right.png" alt="" decoding="async" class="lazyloaded"
+                        data-ll-status="loaded"><noscript><img src="image/title_food_image_right.png" alt=""
+                          decoding="async"></noscript></span></h2>
+                </div>
+              </div>
+              <div class="container--fluid">
+                <section class="l-section" id="foodLunch">
+                  <div class="l-section_inner container">
+                    <div class="l-section_title text-center text-center mb-3">
+                      <h3 class="l-section_titleText--sub text-center">昼食</h3>
+                    </div>
+                    <p class="l-section_lead text-center">チェックイン前に食べれちゃう</p>
+                    <div class="inner">
+                      <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                        <ul class="swiper-wrapper" id="swiper-wrapper-53679d1106e0c3eba" aria-live="polite">
+                          <li class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 2"
+                            data-swiper-slide-index="0" style="width: 720px;"><img src="image/hiru_slide01.jpg" alt="">
+                          </li>
+                          <li class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 2"
+                            data-swiper-slide-index="1" style="width: 720px;"><img src="image/hiru_slide02.jpg" alt="">
+                          </li>
+                        </ul>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                      </div>
+                      <!-- navigation buttons -->
+                      <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"
+                        aria-controls="swiper-wrapper-53679d1106e0c3eba"></div>
+                      <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+                        aria-controls="swiper-wrapper-53679d1106e0c3eba"></div>
+                    </div>
+                  </div>
+                </section>
+                <section class="l-section" id="foodDinner">
+                  <div class="l-section_inner container">
+                    <div class="l-section_title text-center text-center">
+                      <h3 class="l-section_titleText--sub text-center">夕食</h3>
+                    </div>
+                    <div class="inner">
+                      <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                        <ul class="swiper-wrapper" id="swiper-wrapper-a0da10f17d45b6ed3" aria-live="polite">
+                          <li class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 6"
+                            data-swiper-slide-index="0" style="width: 720px;"><img src="image/yoru_slide01.jpg" alt="">
+                          </li>
+                          <li class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 6"
+                            data-swiper-slide-index="1" style="width: 720px;"><img src="image/yoru_slide02.jpg" alt="">
+                          </li>
+                          <li class="swiper-slide" role="group" aria-label="3 / 6" data-swiper-slide-index="2"
+                            style="width: 720px;"><img src="image/yoru_slide03.jpg" alt=""></li>
+                          <li class="swiper-slide" role="group" aria-label="4 / 6" data-swiper-slide-index="3"
+                            style="width: 720px;"><img src="image/yoru_slide04.jpg" alt=""></li>
+                          <li class="swiper-slide" role="group" aria-label="5 / 6" data-swiper-slide-index="4"
+                            style="width: 720px;"><img src="image/yoru_slide05.jpg" alt=""></li>
+                          <li class="swiper-slide" role="group" aria-label="6 / 6" data-swiper-slide-index="5"
+                            style="width: 720px;"><img src="image/yoru_slide06.jpg" alt=""></li>
+                        </ul>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                      </div>
+                      <!-- navigation buttons -->
+                      <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"
+                        aria-controls="swiper-wrapper-a0da10f17d45b6ed3"></div>
+                      <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+                        aria-controls="swiper-wrapper-a0da10f17d45b6ed3"></div>
+                    </div>
+                  </div>
+                </section>
+                <section class="l-section" id="foodBreakfast">
+                  <div class="l-section_inner container">
+                    <div class="l-section_title text-center text-center">
+                      <h3 class="l-section_titleText--sub text-center">朝食</h3>
+                    </div>
+                    <div class="inner">
+                      <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                        <ul class="swiper-wrapper" id="swiper-wrapper-aeb94432ddf107412" aria-live="polite">
+                          <li class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 1"
+                            style="width: 720px;"><img src="image/asa_slide01.jpg" alt=""></li>
+                        </ul>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+        <section class="l-section l-option" id="play">
+          <div class="l-section_bg py-lg-5">
+            <div class="l-section_inner container py-5">
+              <div class="container">
+                <div class="l-section_title--image text-center mb-5">
+                  <h2 class="l-section_titleText l-section_titleText--playoption"><span
+                      class="l-section_titleImage--left"><img src="image/title_play_image_left.png" alt=""
+                        decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                          src="image/title_play_image_left.png" alt="" decoding="async"></noscript></span>遊びの<br
+                      class="u-sp">オプション<span class="l-section_titleImage--right"><img
+                        src="image/title_play_image_right.png" alt="" decoding="async" class="lazyloaded"
+                        data-ll-status="loaded"><noscript><img src="image/title_play_image_right.png" alt=""
+                          decoding="async"></noscript></span>
+                  </h2>
+                </div>
+                <div class="inner">
+                  <div class="swiper asobi-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                    <ul class="swiper-wrapper" id="swiper-wrapper-149bcb992eb4e2e2" aria-live="polite">
+                      <li class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 2"
+                        data-swiper-slide-index="0" style="width: 720px;"><img src="image/asobi_slide01.jpg" alt="">
+                      </li>
+                      <li class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 2"
+                        data-swiper-slide-index="1" style="width: 720px;"><img src="image/asobi_slide02.jpg" alt="">
+                      </li>
+                    </ul>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                  </div>
+                  <!-- navigation buttons -->
+                  <div class="swiper-button-prev asobi-swiper-prev" tabindex="0" role="button"
+                    aria-label="Previous slide" aria-controls="swiper-wrapper-149bcb992eb4e2e2"></div>
+                  <div class="swiper-button-next asobi-swiper-next" tabindex="0" role="button" aria-label="Next slide"
+                    aria-controls="swiper-wrapper-149bcb992eb4e2e2"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+
+
+
+
+        <section class="l-section l-option" id="spa">
+          <div class="l-section_bg--lightgray py-lg-5">
+            <div class="l-section_inner container py-5">
+              <div class="container">
+                <div class="l-section_title--image text-center mb-5">
+                  <h2 class="l-section_titleText l-section_titleText--spaoption"><span
+                      class="l-section_titleImage--left"><img src="image/title_spa_image_left.png" alt=""
+                        decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                          src="image/title_spa_image_left.png" alt="" decoding="async"></noscript></span>温泉の<br
+                      class="u-sp">オプション<span class="l-section_titleImage--right"><img
+                        src="image/title_spa_image_right.png" alt="" decoding="async" class="lazyloaded"
+                        data-ll-status="loaded"><noscript><img src="image/title_spa_image_right.png" alt=""
+                          decoding="async"></noscript></span></h2>
+                </div>
+                <div class="inner">
+                  <div class="swiper spa-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                    <ul class="swiper-wrapper" id="swiper-wrapper-149bcb992eb4e2e2" aria-live="polite">
+                      <li class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4"
+                        data-swiper-slide-index="0" style="width: 720px;"><img src="image/enjoy_slide04-1.png" alt="">
+                      </li>
+                      <li class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 4"
+                        data-swiper-slide-index="1" style="width: 720px;"><img src="image/enjoy_slide04-2.png" alt="">
+                      </li>
+                      <li class="swiper-slide" role="group" aria-label="3 / 4" data-swiper-slide-index="2"
+                        style="width: 720px;"><img src="image/enjoy_slide04-3.png" alt="">
+                      </li>
+                      <li class="swiper-slide" role="group" aria-label="4 / 4" data-swiper-slide-index="3"
+                        style="width: 720px;"><img src="image/enjoy_slide04-4.png" alt="">
+                      </li>
+                    </ul>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                  </div>
+                  <!-- navigation buttons -->
+                  <div class="swiper-button-prev asobi-swiper-prev" tabindex="0" role="button"
+                    aria-label="Previous slide" aria-controls="swiper-wrapper-149bcb992eb4e2e2"></div>
+                  <div class="swiper-button-next asobi-swiper-next" tabindex="0" role="button" aria-label="Next slide"
+                    aria-controls="swiper-wrapper-149bcb992eb4e2e2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="l-section l-song" id="difference">
+          <div class="l-section_bg py-sm-5">
+            <div class="l-section_inner pt-5">
+              <div class="container">
+                <div class="l-section_title--image text-center mb-5">
+                  <h2 class="l-section_titleText l-section_titleText--address"><span
+                      class="l-section_titleImage--left"><img src="image/title_history_image_left.png" alt=""
+                        decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                          src="image/title_history_image_left.png" alt=""
+                          decoding="async"></noscript></span>全国にある<br>廃校宿泊との違い<span
+                      class="l-section_titleImage--right"><img src="image/title_history_image_right.png" alt=""
+                        decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                          src="image/title_history_image_right.png" alt="" decoding="async"></noscript></span></h2>
+                </div>
+                <div class="l-song_image col-lg-10 mx-auto mb-5"><img src="image/song_image.png" alt="片浜小学校校歌歌詞"
+                    decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                      src="image/song_image.png" alt="片浜小学校校歌歌詞" decoding="async"></noscript>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="l-section l-map" id="map">
+          <div class="l-section_inner l-section_bg--gray py-lg-5  ">
+            <div class="container-fluid px-0 py-5">
+              <div class="container">
+                <div class="l-section_title text-center">
+                  <h2 class="l-map_title">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="image/map_title_sp.png">
+                      <img src="image/map_title.png" alt="校内MAP" decoding="async" class="lazyloaded"
+                        data-ll-status="loaded"><noscript><img src="image/map_title.png" alt="校内MAP"
+                          decoding="async" /></noscript>
+                    </picture>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="l-map_image"><img loading="lazy" src="image/map.gif" alt="校内MAP画像" width="1208" height="859"
+                  decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img loading="lazy"
+                    src="map.gif" alt="校内MAP画像" width="1208" height="859" decoding="async" /></noscript></div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="l-section l-address py-sm-5" id="location">
+          <div class="l-section_bg">
+            <div class="l-section_inner pt-5">
+              <div class="container">
+                <div class="l-section_title--image text-center mb-5">
+                  <h2 class="l-section_titleText l-section_titleText--address"><span
+                      class="l-section_titleImage--left"><img src="image/title_address_image_left.png" alt=""
+                        decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                          src="image/title_address_image_left.png" alt="" decoding="async"></noscript></span>所在地<span
+                      class="l-section_titleImage--right"><img src="image/title_address_image_right.png" alt=""
+                        decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                          src="image/title_address_image_right.png" alt="" decoding="async"></noscript></span></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="l-section_bg--lightgray pb-sm-5">
+            <div class="l-section_inner container pb-5">
+              <div class="l-address_map mb-5"><iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.70236636216!2d138.2101797152326!3d34.71268628043149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601a5dd56c00eb49%3A0xbfdbae7f4111a82d!2z44Kr44K_44K344On44O844O744Ov44Oz44Op44Oc5Y2X6aeQ6LuK5aC0!5e0!3m2!1sja!2sjp!4v1621179934704!5m2!1sja!2sjp"
+                  width="100%" height="475" style="border:0;" allowfullscreen="" loading="lazy"
+                  data-rocket-lazyload="fitvidscompatible" class="lazyloaded"
+                  data-ll-status="loaded"></iframe><noscript><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.70236636216!2d138.2101797152326!3d34.71268628043149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601a5dd56c00eb49%3A0xbfdbae7f4111a82d!2z44Kr44K_44K344On44O844O744Ov44Oz44Op44Oc5Y2X6aeQ6LuK5aC0!5e0!3m2!1sja!2sjp!4v1621179934704!5m2!1sja!2sjp"
+                    width="100%" height="475" style="border:0;" allowfullscreen="" loading="lazy"></iframe></noscript>
+              </div>
+              <div class="l-address_info text-center mb-5">
+                <h3 class="l-address_infoTitle mb-3">所在地</h3>
+                <p class="l-address_infoText">〒421-0511<br>静岡県牧之原市片浜1216−1<br>カタショー・ワンラボ</p>
+              </div>
+              <div class="l-address_info text-center">
+                <h3 class="l-address_infoTitle mb-3">営業時間</h3>
+                <p class="l-address_infoText">月〜日: 9:00AM – 9:00PM</p>
+                <p class="l-address_infoCaption"><small>※施設利用状況に合わせて閉館時間が<br class="u-sp">変動する場合がございます。</small></p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="l-section l-faq l-section_bg py-lg-5" id="faq">
+          <div class="l-faq_bg">
+            <div class="l-faq_bgLeft"><img src="image/faq_bg_left.png" alt="" decoding="async" class="lazyloaded"
+                data-ll-status="loaded"><noscript><img src="image/faq_bg_left.png" alt="" decoding="async" /></noscript>
+            </div>
+            <div class="l-faq_bgRight">
+              <picture>
+                <source media="(max-width: 991px)" srcset="image/faq_bg_right_sp.png">
+                <img src="image/faq_bg_right.png" alt="" decoding="async" class="lazyloaded"
+                  data-ll-status="loaded"><noscript><img src="image/faq_bg_right.png" alt=""
+                    decoding="async" /></noscript>
+              </picture>
+            </div>
+            <div class="l-section_inner container py-5">
+              <div class="l-section_title text-center mb-5">
+                <h2 class="l-section_titleText l-section_titleText--faq">
+                  <span class="l-section_titleBalloon--faq"><img src="image/title_faq_balloon.svg" alt=""
+                      decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                        src="image/title_faq_balloon.svg" alt="" decoding="async" /></noscript></span>よくある質問
+                </h2>
+              </div>
+              <div class="l-faq_list col-lg-8 mx-auto mb-5">
+                <details class="faq">
+                  <summary class="faq_title">カタショー（小学校）は完全に貸切施設なのですか？</summary>
+                  <div class="faq_body">
+                    カタショーには、子育て支援センター、シルバー人材センターなど地域の団体の利用などもございます。夜間は各棟でのフロア貸切りとなります。宿泊可能グループは各棟1グループです。</div>
+                </details>
+                <details class="faq">
+                  <summary class="faq_title">どのような人が利用（宿泊）するのですか。</summary>
+                  <div class="faq_body">友達グループでの宿泊や、サークル合宿、音楽合宿、家族旅行での利用や、コスプレ撮影利用など多くの方々に利用いただいています。</div>
+                </details>
+                <details class="faq">
+                  <summary class="faq_title">海（海岸）が近そうですが、何分くらいかかりますか。</summary>
+                  <div class="faq_body">学校を出てまっすぐ歩いてなんと3分（旧片浜海水浴場）で着きます！</div>
+                </details>
+                <details class="faq">
+                  <summary class="faq_title">学校内でのスタッフのサポートはありますか。</summary>
+                  <div class="faq_body">スタッフが遊びや食事の提供なども行います！小学校施設利用でお困りの際には、すぐに対応致します！</div>
+                </details>
+                <details class="faq">
+                  <summary class="faq_title">宿泊時の値段や人数制限など知りたいです。</summary>
+                  <div class="faq_body"><a
+                      href="/play">「学校で遊んで泊まる」</a>をご覧ください！<br>シャワー室が7つの為、人数が多い場合は提携している温泉施設の利用をお勧めしております。</div>
+                </details>
+                <details class="faq">
+                  <summary class="faq_title">カタショーの給食はどのように提供されますか。</summary>
+                  <div class="faq_body">
+                    配膳室から教室に、給食に必要なものを運んでいただき、給食当番を作っていただき配膳していただきます。<br>皆さんに同じ給食を提供致しますので、グループで1種類お選びください。<br>小学校時代の給食時間と同じようなひと時となります。
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+        <div class="l-main_bg"><img src="image/main_bg_animate.gif" alt="" decoding="async" class="lazyloaded"
+            data-ll-status="loaded"><noscript><img src="image/main_bg_animate.gif" alt="" decoding="async" /></noscript>
+        </div>
+
+      </div>
+    </main>
+    <footer class="l-footer text-white py-lg-5" id="footer">
+      <div class="l-footer_inner container">
+        <div class="row">
+          <div class="col-lg-8 mb-3 mb-lg-0">
+            <div class="l-footer_info">
+              <div class="l-footer_logo"><a href="/"><img
+                    src="https://katasho.jp/wp-content/themes/katasho/asset/image/logo_footer.svg" alt="logo"
+                    decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                      src="https://katasho.jp/wp-content/themes/katasho/asset/image/logo_footer.svg" alt="logo"
+                      decoding="async" /></noscript></a></div>
+              <div class="l-footer_name">
+                <p class="mb-0 fw-bold">遊んで泊まれる小学校　カタショー</p>
+              </div>
+              <div class="l-footer_address">
+                <p class="mb-0">静岡県牧之原市片浜1216-1</p>
+                <p class="mb-0">カタショー・ワンラボ内</p>
+              </div>
+            </div>
+            <div class="l-footer_contact">
+              <div class="l-footer_sns">
+                <div class="l-footer_snsTitle"><img
+                    src="https://katasho.jp/wp-content/themes/katasho/asset/image/text_followus.svg" alt="FOLLOW US"
+                    decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                      src="https://katasho.jp/wp-content/themes/katasho/asset/image/text_followus.svg" alt="FOLLOW US"
+                      decoding="async" /></noscript>
+                </div>
+                <ul class="l-footer_snsList list-unstyled mb-0">
+                  <li><a href="https://twitter.com/katasho2tomaro" target="_blank"><img
+                        src="https://katasho.jp/wp-content/themes/katasho/asset/image/sns_twitter.svg" alt="Twitter"
+                        decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                          src="https://katasho.jp/wp-content/themes/katasho/asset/image/sns_twitter.svg" alt="Twitter"
+                          decoding="async" /></noscript></a></li>
+                  <li><a href="https://www.instagram.com/shizuoka_katasho/" target="_blank"><img
+                        src="https://katasho.jp/wp-content/themes/katasho/asset/image/sns_instagram.svg" alt="Instagram"
+                        decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                          src="https://katasho.jp/wp-content/themes/katasho/asset/image/sns_instagram.svg"
+                          alt="Instagram" decoding="async" /></noscript></a></li>
+                </ul>
+              </div>
+              <div class="l-footer_contact"><a class="btn btn-outline-white" id="footerBtnContact"
+                  href="https://katasho.jp/contact/">お問い合わせ</a></div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex">
+            <div class="l-footer_copy">
+              <p class="text-center text-lg-end mb-0"><small>© 2021 <a href="https://makilabo.jp/" target="_blank"
+                    rel="noopener">株式会社マキノハラボ</a></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="l-footer_reserve is-show" id="reserveFixed">
+        <button class="l-footer_reserveLink" id="footerBtnReserve" type="button" data-tripla-booking-widget="search">
+          <div class="l-footer_reserveBtn">
+            <picture>
+              <source media="(max-width: 991px)"
+                srcset="https://katasho.jp/wp-content/themes/katasho/asset/image/btn_reserve_sp.svg">
+              <img src="https://katasho.jp/wp-content/themes/katasho/asset/image/btn_reserve.svg" alt="予約（空き状況）"
+                decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                  src="https://katasho.jp/wp-content/themes/katasho/asset/image/btn_reserve.svg" alt="予約（空き状況）"
+                  decoding="async" /></noscript>
+            </picture>
+          </div>
+          <div class="l-footer_reserveImage u-pc"><img
+              src="https://katasho.jp/wp-content/themes/katasho/asset/image/btn_reserve_image.png" alt=""
+              decoding="async" class="lazyloaded" data-ll-status="loaded"><noscript><img
+                src="https://katasho.jp/wp-content/themes/katasho/asset/image/btn_reserve_image.png" alt=""
+                decoding="async" /></noscript>
+          </div>
+        </button>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://katasho.jp/wp-content/themes/katasho/asset/js/bundle.js" async=""></script>
+
+  <!-- Custom Facebook Feed JS -->
+  <script type="text/javascript">var cffajaxurl = "https://katasho.jp/wp-admin/admin-ajax.php";
+    var cfflinkhashtags = "true";
+  </script>
+  <!-- YouTube Feeds JS -->
+  <script type="text/javascript">
+
+  </script>
+  <!-- Instagram Feed JS -->
+  <script type="text/javascript">
+    var sbiajaxurl = "https://katasho.jp/wp-admin/admin-ajax.php";
+  </script>
+  <script type="text/javascript"
+    src="https://www.google.com/recaptcha/api.js?render=6LdAboUqAAAAAPCSsLcEA7brxYfsm9iBpkpqtaCH&amp;ver=3.0"
+    id="google-recaptcha-js"></script>
+  <script type="text/javascript" src="https://katasho.jp/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0"
+    id="wp-polyfill-js"></script>
+  <script type="text/javascript" id="wpcf7-recaptcha-js-before">
+    /* <![CDATA[ */
+    var wpcf7_recaptcha = {
+      "sitekey": "6LdAboUqAAAAAPCSsLcEA7brxYfsm9iBpkpqtaCH",
+      "actions": {
+        "homepage": "homepage",
+        "contactform": "contactform"
+      }
+    };
+    /* ]]> */
+  </script>
+  <script type="text/javascript"
+    src="https://katasho.jp/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=6.0.5"
+    id="wpcf7-recaptcha-js"></script>
+  <script>window.lazyLoadOptions = {
+      elements_selector: "img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",
+      data_src: "lazy-src",
+      data_srcset: "lazy-srcset",
+      data_sizes: "lazy-sizes",
+      class_loading: "lazyloading",
+      class_loaded: "lazyloaded",
+      threshold: 300,
+      callback_loaded: function (element) {
+        if (element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible") {
+          if (element.classList.contains("lazyloaded")) {
+            if (typeof window.jQuery != "undefined") {
+              if (jQuery.fn.fitVids) {
+                jQuery(element).parent().fitVids();
+              }
+            }
+          }
+        }
+      }
+    };
+    window.addEventListener('LazyLoad::Initialized', function (e) {
+      var lazyLoadInstance = e.detail.instance;
+
+      if (window.MutationObserver) {
+        var observer = new MutationObserver(function (mutations) {
+          var image_count = 0;
+          var iframe_count = 0;
+          var rocketlazy_count = 0;
+
+          mutations.forEach(function (mutation) {
+            for (i = 0; i < mutation.addedNodes.length; i++) {
+              if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') {
+                return;
+              }
+
+              if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') {
+                return;
+              }
+
+              images = mutation.addedNodes[i].getElementsByTagName('img');
+              is_image = mutation.addedNodes[i].tagName == "IMG";
+              iframes = mutation.addedNodes[i].getElementsByTagName('iframe');
+              is_iframe = mutation.addedNodes[i].tagName == "IFRAME";
+              rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');
+
+              image_count += images.length;
+              iframe_count += iframes.length;
+              rocketlazy_count += rocket_lazy.length;
+
+              if (is_image) {
+                image_count += 1;
+              }
+
+              if (is_iframe) {
+                iframe_count += 1;
+              }
+            }
+          });
+
+          if (image_count > 0 || iframe_count > 0 || rocketlazy_count > 0) {
+            lazyLoadInstance.update();
+          }
+        });
+
+        var b = document.getElementsByTagName("body")[0];
+        var config = { childList: true, subtree: true };
+
+        observer.observe(b, config);
+      }
+    }, false);</script>
+  <script data-no-minify="1" async=""
+    src="https://katasho.jp/wp-content/plugins/rocket-lazy-load/assets/js/16.1/lazyload.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- SwiperのJSを読み込む -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" id=""
+    charset="">(function (a, e, b, f, g, c, d) { a[b] = a[b] || function () { (a[b].q = a[b].q || []).push(arguments) }; c = e.createElement(f); c.async = 1; c.src = "https://www.clarity.ms/tag/" + g + "?ref\x3dgtm2"; d = e.getElementsByTagName(f)[0]; d.parentNode.insertBefore(c, d) })(window, document, "clarity", "script", "oqarn3nbvd");</script>
+  <script type="text/javascript" id="" charset="">!function (d, h, e) {
+      d.TiktokAnalyticsObject = e; var a = d[e] = d[e] || []; a.methods = "page track identify instances debug on off once ready alias group enableCookie disableCookie holdConsent revokeConsent grantConsent".split(" "); a.setAndDefer = function (b, c) { b[c] = function () { b.push([c].concat(Array.prototype.slice.call(arguments, 0))) } }; for (d = 0; d < a.methods.length; d++)a.setAndDefer(a, a.methods[d]); a.instance = function (b) { b = a._i[b] || []; for (var c = 0; c < a.methods.length; c++)a.setAndDefer(b, a.methods[c]); return b }; a.load =
+        function (b, c) { var f = "https://analytics.tiktok.com/i18n/pixel/events.js", g = c && c.partner; a._i = a._i || {}; a._i[b] = []; a._i[b]._u = f; a._i[b]._partner = g || "GoogleTagManagerClient"; a._t = a._t || {}; a._t[b] = +new Date; a._o = a._o || {}; a._o[b] = c || {}; a._partner = a._partner || "GoogleTagManagerClient"; c = document.createElement("script"); c.type = "text/javascript"; c.async = !0; c.src = f + "?sdkid\x3d" + b + "\x26lib\x3d" + e; b = document.getElementsByTagName("script")[0]; b.parentNode.insertBefore(c, b) }; a.load("CUFI2KRC77U47BI90DDG"); a.page()
+    }(window,
+      document, "ttq");</script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // 昼食のスライダー
+      var foodLunchSwiper = new Swiper("#foodLunch .swiper", {
+        loop: true,
+        autoplay: false,
+        navigation: {
+          nextEl: "#foodLunch .swiper-button-next",
+          prevEl: "#foodLunch .swiper-button-prev",
+        },
+      });
+
+      // 夕食のスライダー
+      var foodDinnerSwiper = new Swiper("#foodDinner .swiper", {
+        loop: true,
+        autoplay: false,
+        navigation: {
+          nextEl: "#foodDinner .swiper-button-next",
+          prevEl: "#foodDinner .swiper-button-prev",
+        },
+      });
+
+      // 朝食のスライダー（スライド1枚のみなのでループ不要）
+      var foodBreakfastSwiper = new Swiper("#foodBreakfast .swiper", {
+        loop: false,
+        autoplay: false,
+      });
+
+      // **遊び（asobi）のスライダー**
+
+      var asobiSwiper = new Swiper(".asobi-swiper", {
+        loop: true,
+        autoplay: false,
+        navigation: {
+          nextEl: "section#play .asobi-swiper-next",
+          prevEl: "section#play .asobi-swiper-prev",
+        },
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      console.log("Swiper is loaded!"); // JSが読み込まれているか確認
+
+      // Attraction スライダー
+      var attractionSwiper = new Swiper("#attraction .swiper", {
+        loop: true,
+        autoplay: false,
+        navigation: {
+          nextEl: "#attraction .swiper-button-next",
+          prevEl: "#attraction .swiper-button-prev",
+        },
+      });
+
+      // 給食（School Lunch）スライダー
+      var schoolLunchSwiper = new Swiper("#schoollunch .swiper", {
+        loop: true,
+        autoplay: false,
+        navigation: {
+          nextEl: "#schoollunch .swiper-button-next",
+          prevEl: "#schoollunch .swiper-button-prev",
+        },
+      });
+
+      // 宿泊（Sleepover）スライダー
+      var sleepoverSwiper = new Swiper("#sleepover .swiper", {
+        loop: true,
+        autoplay: false,
+        navigation: {
+          nextEl: "#sleepover .swiper-button-next",
+          prevEl: "#sleepover .swiper-button-prev",
+        },
+      });
+
+      // **温泉（spa-swiper）のスライダー
+      var spaSwiper = new Swiper("#spa .swiper", {
+        loop: true,
+        autoplay: false,
+        navigation: {
+          nextEl: "#spa .swiper-button-next",
+          prevEl: "#spa .swiper-button-prev",
+        },
+      });
+
+
+
+      // 各スライダーにスクロールでの起動を適用
+      initSwiperOnScroll(attractionSwiper, "#attraction");
+      initSwiperOnScroll(schoolLunchSwiper, "#schoollunch");
+      initSwiperOnScroll(sleepoverSwiper, "#sleepover");
+      initSwiperOnScroll(spaSwiper, "#spa");
+    });
+
+  </script>
+
+
+  <div>
+    <div class="grecaptcha-badge" data-style="bottomright"
+      style="width: 256px; height: 60px; display: block; transition: right 0.3s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
+      <div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation"
+          name="a-8y8a4g93zclu" frameborder="0" scrolling="no"
+          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+          src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdAboUqAAAAAPCSsLcEA7brxYfsm9iBpkpqtaCH&amp;co=ZmlsZTo.&amp;hl=ja&amp;v=bUO1BXI8H9PgjAPSW9hwuSeI&amp;size=invisible&amp;cb=btonob9g9ogk"></iframe>
+      </div>
+      <div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
+        class="g-recaptcha-response"
+        style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+    </div><iframe style="display: none;"></iframe>
+  </div>
+  <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/versions/2.22.3/sdk.js"></script>
+  <div style="display: none; visibility: hidden;">
+    <script>!function (d, g, e) {
+        d.TiktokAnalyticsObject = e; var a = d[e] = d[e] || []; a.methods = "page track identify instances debug on off once ready alias group enableCookie disableCookie holdConsent revokeConsent grantConsent".split(" "); a.setAndDefer = function (b, c) { b[c] = function () { b.push([c].concat(Array.prototype.slice.call(arguments, 0))) } }; for (d = 0; d < a.methods.length; d++)a.setAndDefer(a, a.methods[d]); a.instance = function (b) { b = a._i[b] || []; for (var c = 0; c < a.methods.length; c++)a.setAndDefer(b, a.methods[c]); return b }; a.load =
+          function (b, c) { var f = "https://analytics.tiktok.com/i18n/pixel/events.js"; a._i = a._i || {}; a._i[b] = []; a._i[b]._u = f; a._t = a._t || {}; a._t[b] = +new Date; a._o = a._o || {}; a._o[b] = c || {}; c = document.createElement("script"); c.type = "text/javascript"; c.async = !0; c.src = f + "?sdkid\x3d" + b + "\x26lib\x3d" + e; b = document.getElementsByTagName("script")[0]; b.parentNode.insertBefore(c, b) }; a.load("CUFHQKBC77U7V3T8MGL0"); a.page()
+      }(window, document, "ttq");</script>
+  </div><!---->
+  <script src="https://triplabot-production.tripla.ai/SearchBar/tripla-search-bar-5d3f8f042d33b2e3eb0e.min.js"></script>
+
+
+</body>
+
+</html>
