@@ -271,16 +271,27 @@
               </span>
               <span class="u-tab">
                 <video id="mainVideo" width="100%" height="auto" muted autoplay loop playsinline preload="none"
-                  poster="image/video_sp.jpg"></video>
+                  poster="image/video_sp.webp"></video>
+
                 <script>
                   window.addEventListener('DOMContentLoaded', () => {
                     const video = document.getElementById('mainVideo');
-                    video.src = 'image/video_sp.mp4';
-                    video.load();
+                    const observer = new IntersectionObserver((entries) => {
+                      entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                          video.src = "image/video_sp.mp4";
+                          video.load();
+                          observer.unobserve(video);
+                        }
+                      });
+                    }, { threshold: 0.25 });
+
+                    observer.observe(video);
                   });
                 </script>
+
               </span>
-    
+
 
 
               <!-- 重ねる画像 -->
