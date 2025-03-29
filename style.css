@@ -549,7 +549,7 @@ ul {
   left: 1000px;
   width: 230px;
   height: 230px;
-  background: url(image/scissors.png) no-repeat;
+  background: url(./image/scissors.png) no-repeat;
   background-size: contain;
 }
 
@@ -560,7 +560,7 @@ ul {
   right: -340px;
   width: 510px;
   height: 510px;
-  background: url(image/book.png) no-repeat;
+  background: url(./image/book.png) no-repeat;
   background-size: contain;
 }
 
