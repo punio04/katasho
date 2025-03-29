@@ -277,11 +277,9 @@
                   poster="image/video_sp.webp" loading="lazy"></video>
 
                 <script>
-                  // LCPが終わったあと、動画を遅延読み込み
                   window.addEventListener("DOMContentLoaded", () => {
                     const video = document.getElementById("mainVideo");
 
-                    // スクロールで画面に入ったら読み込む方式
                     const observer = new IntersectionObserver((entries, observer) => {
                       entries.forEach(entry => {
                         if (entry.isIntersecting) {
@@ -291,13 +289,12 @@
                         }
                       });
                     }, {
-                      threshold: 0.25 // 25%入ったら読み込む
+                      threshold: 0.25
                     });
 
                     observer.observe(video);
                   });
                 </script>
-
 
               </span>
 
