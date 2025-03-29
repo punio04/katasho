@@ -273,8 +273,31 @@
                 </video>
               </span>
               <span class="u-tab">
-                <video id="mainVideo" src="image/video_sp.mp4" poster="image/video_sp.webp" width="360" height="642" muted autoplay loop playsinline
-                  preload="none"></video>
+                <video id="mainVideo" width="360" height="642" muted autoplay loop playsinline preload="none"
+                  poster="image/video_sp.webp" loading="lazy"></video>
+
+                <script>
+                  // LCPが終わったあと、動画を遅延読み込み
+                  window.addEventListener("DOMContentLoaded", () => {
+                    const video = document.getElementById("mainVideo");
+
+                    // スクロールで画面に入ったら読み込む方式
+                    const observer = new IntersectionObserver((entries, observer) => {
+                      entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                          video.src = "image/video_sp.mp4";
+                          video.load();
+                          observer.unobserve(video);
+                        }
+                      });
+                    }, {
+                      threshold: 0.25 // 25%入ったら読み込む
+                    });
+
+                    observer.observe(video);
+                  });
+                </script>
+
 
               </span>
 
