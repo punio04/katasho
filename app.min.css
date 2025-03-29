@@ -2079,8 +2079,8 @@ a {
 
   .l-section_titleImage--left,
   .l-section_titleImage--right {
-    padding: 0 2.66667vw;
-    height: 32vw
+    padding: 0 1.66667vw;
+    height: 22vw;
   }
 
   .l-section_titleBalloon--faq {
