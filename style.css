@@ -1515,4 +1515,8 @@ ul {
     pointer-events: none;
     padding: 0px 0px;
   }
+
+  .l-mv_video {
+    border-radius: 0
+  }
 }
