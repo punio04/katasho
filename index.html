@@ -276,25 +276,6 @@
               <span class="u-tab">
                 <video id="mainVideo" width="360" height="642" muted autoplay loop playsinline preload="none" poster="image/video_sp.webp"></video>
 
-                <script>
-                  window.addEventListener("DOMContentLoaded", () => {
-                    const video = document.getElementById("mainVideo");
-
-                    const observer = new IntersectionObserver((entries, observer) => {
-                      entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                          video.src = "image/video_sp.mp4";
-                          video.load();
-                          observer.unobserve(video);
-                        }
-                      });
-                    }, {
-                      threshold: 0.25
-                    });
-
-                    observer.observe(video);
-                  });
-                </script>
 
 
               </span>
