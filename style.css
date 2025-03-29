@@ -63,7 +63,7 @@ img {
 }
 
 .swiper-button-prev {
-  background: url(image/slide_pre.png) no-repeat center / cover !important;
+  background: url(./image/slide_pre.png) no-repeat center / cover !important;
   left: 60px !important;
 }
 
@@ -84,7 +84,7 @@ img {
 }
 
 .swiper-button-next {
-  background: url(image/slide_next.png) no-repeat center / cover !important;
+  background: url(./image/slide_next.png) no-repeat center / cover !important;
   right: 60px !important;
 }
 
@@ -206,7 +206,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .swiper-button-prev {
-    background: url(image/slide_pre.png) no-repeat center / cover !important;
+    background: url(./image/slide_pre.png) no-repeat center / cover !important;
     left: 5px !important;
   }
 }
@@ -225,7 +225,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .swiper-button-next {
-    background: url(image/slide_next.png) no-repeat center / cover !important;
+    background: url(./image/slide_next.png) no-repeat center / cover !important;
     right: 5px !important;
   }
 }
@@ -355,7 +355,7 @@ ul {
   left: -100px;
   width: 230px;
   height: 230px;
-  background: url(image/scissors.png) no-repeat;
+  background: url(./image/scissors.png) no-repeat;
   background-size: contain;
 }
 
@@ -366,7 +366,7 @@ ul {
   right: -100px;
   width: 230px;
   height: 230px;
-  background: url(image/ruler.png) no-repeat;
+  background: url(./image/ruler.png) no-repeat;
   background-size: contain;
 }
 
@@ -549,7 +549,7 @@ ul {
   left: 1000px;
   width: 230px;
   height: 230px;
-  background: url(image/scissors.png) no-repeat;
+  background: url(./image/scissors.png) no-repeat;
   background-size: contain;
 }
 
@@ -560,7 +560,7 @@ ul {
   right: -340px;
   width: 510px;
   height: 510px;
-  background: url(image/book.png) no-repeat;
+  background: url(./image/book.png) no-repeat;
   background-size: contain;
 }
 
@@ -587,7 +587,7 @@ ul {
   right: 1000px;
   width: 230px;
   height: 230px;
-  background: url(image/ruler.png) no-repeat;
+  background: url(./image/ruler.png) no-repeat;
   background-size: contain;
 }
 
@@ -965,7 +965,7 @@ ul {
     right: 310px;
     width: 100px;
     height: 100px;
-    background: url(image/ruler.png) no-repeat;
+    background: url(./image/ruler.png) no-repeat;
     background-size: contain;
   }
 }
@@ -991,7 +991,7 @@ ul {
     right: 310px;
     width: 100px;
     height: 100px;
-    background: url(image/ruler.png) no-repeat;
+    background: url(./image/ruler.png) no-repeat;
     background-size: contain;
   }
 
